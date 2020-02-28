@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question_detail">
+
+    <TextView
+        android:id="@+id/questiondetail_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/question_txt"
+        android:textColor="#5D8DC7"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/qnadetailtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/qnatxt"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/questiondetail_txt"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/question_edit"
+        android:layout_below="@id/qnadetailtxt"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                android:id="@+id/include_customlist"
+                layout="@layout/custom_questiondetail_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Separation_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/include_customlist"
+                android:background="#757575"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"/>
+
+            <include
+                android:id="@+id/comment_andswer"
+                layout="@layout/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                android:layout_below="@id/include_customlist">
+            </include>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/question_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:visibility="visible"
+        android:hint="@string/question_edit"
+        android:layout_toLeftOf="@id/answer_btn"
+        android:layout_alignTop="@id/answer_btn"
+        android:paddingLeft="5dp"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/answer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#6674FD"
+        android:visibility="visible"
+        android:text="@string/answer_btn"
+        android:textSize="17dp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:id="@+id/backlist_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6674FD"
+        android:visibility="gone"
+        android:text="@string/backlist_btn"
+        android:textSize="17dp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mainphoto"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mainphoto" />
+            <TextView
+                android:id="@+id/usernametxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="bottom|end"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/welcomoceanit"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/introduce_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:src="@drawable/introduce" />
+
+            <ImageButton
+                android:id="@+id/member_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:src="@drawable/member" />
+
+            <ImageButton
+                android:id="@+id/research_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:src="@drawable/research" />
+
+            <ImageButton
+                android:id="@+id/question_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:src="@drawable/question" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/introduce_text"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/introduce_text"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/member_text"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/member_text"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/research_text"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/research_text"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/question_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/question_text"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#79BE0E"
+                android:drawableRight="@drawable/result"
+                android:drawablePadding="-10dp"
+                android:gravity="left|bottom"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/result"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/research_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:background="#9142EB"
+                android:drawableRight="@drawable/subject"
+                android:drawablePadding="-4dp"
+                android:gravity="left|bottom"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/research_btn"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#4FDA96"
+                android:drawableRight="@drawable/gps"
+                android:drawablePadding="3dp"
+                android:gravity="left|bottom"
+                android:paddingLeft="12dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:text="@string/location"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/data_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:background="#5DB1CD"
+                android:drawableRight="@drawable/ocean_data"
+                android:gravity="left|bottom"
+                android:paddingLeft="12dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/data_btn"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#FEC03B"
+                android:drawableRight="@drawable/login"
+                android:visibility="visible"
+                android:gravity="left|bottom"
+                android:paddingLeft="12dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/loginbtn"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/logoutbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#FEC03B"
+                android:drawableRight="@drawable/unlock"
+                android:drawablePadding="-20dp"
+                android:visibility="gone"
+                android:gravity="left|bottom"
+                android:paddingLeft="12dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/logoutbtn"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/pcbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:background="#AA90B7"
+                android:drawableRight="@drawable/pc"
+                android:drawablePadding="-6dp"
+                android:gravity="left|bottom"
+                android:paddingLeft="12dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="10dp"
+                android:text="@string/pcbtn"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="Copyright ⓒ 2019. Deuk. All rights reserved." />
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="resulteditmenu">
+
+        <item >선택하세요</item>
+        <item >논문</item>
+        <item >특허</item>
+        <item >발표</item>
+
+    </string-array>
+
+</resources>

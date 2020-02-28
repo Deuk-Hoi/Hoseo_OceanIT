@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionEdit">
+    <TextView
+        android:id="@+id/questionedit_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/questionedit_txt"
+        android:textColor="#5D8DC7"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/edittxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/edittxt"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/questionedit_txt"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/submit_btn"
+        android:layout_below="@id/edittxt"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scrollbars="none"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/questionsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/questionsubmit"
+                android:textSize="30dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/titletxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionsubmit"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/titletxt"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/titleedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titletxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="7dp"
+                android:hint="@string/titleedit"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:background="@drawable/corner_ractangle"/>
+            <TextView
+                android:id="@+id/writertxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleedit"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/writertxt"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/writeredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/writertxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="7dp"
+                android:hint="@string/writeredit"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:background="@drawable/corner_ractangle"/>
+
+            <TextView
+                android:id="@+id/contentsrtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/writeredit"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/contentsrtxt"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/contentsedit"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/contentsrtxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="7dp"
+                android:hint="@string/contentsedit"
+                android:paddingLeft="10dp"
+                android:gravity="top"
+                android:background="@drawable/corner_ractangle"/>
+            <TextView
+                android:id="@+id/noticetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contentsedit"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/noticetxt"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#6674FD"
+        android:text="@string/submit_btn"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp" />
+</RelativeLayout>

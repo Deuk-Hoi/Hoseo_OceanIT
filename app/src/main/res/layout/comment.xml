@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/custom_resultlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/admincomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="관리자 코멘트"
+            android:textSize="21dp"
+            android:textColor="#000000"
+            android:visibility="visible"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/comment_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="날짜"
+            android:textSize="15dp"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:layout_below="@id/admincomment"
+            />
+        <TextView
+            android:id="@+id/comment_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="내용"
+            android:textSize="18dp"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:layout_below="@id/comment_date"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

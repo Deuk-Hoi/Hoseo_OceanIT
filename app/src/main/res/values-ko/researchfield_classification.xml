@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="researcheditmenu">
+
+        <item >선택하세요</item>
+        <item >위탁</item>
+        <item >협동</item>
+        <item >용역</item>
+        <item >공동</item>
+        <item >주관</item>
+
+    </string-array>
+</resources>

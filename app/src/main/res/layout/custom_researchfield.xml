@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/custom_researchlist"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/research_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="과제명"
+            android:textSize="21dp"
+            android:textColor="#000000"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/support_organization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="지원기관"
+            android:textSize="16dp"
+            android:singleLine="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintTop_toBottomOf="@id/research_name"
+            />
+        <TextView
+            android:id="@+id/classification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="분류"
+            android:textSize="14dp"
+            android:layout_marginTop="7dp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintTop_toBottomOf="@id/support_organization"
+           />
+
+        <TextView
+            android:id="@+id/date_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:text="연구시작"
+            android:textSize="14dp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintLeft_toRightOf="@id/classification"
+            app:layout_constraintBaseline_toBaselineOf="@id/classification"
+        />
+        <TextView
+            android:id="@+id/wave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text=" ~ "
+            android:textSize="14dp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintLeft_toRightOf="@id/date_start"
+            app:layout_constraintTop_toBottomOf="@id/support_organization"
+            />
+        <TextView
+            android:id="@+id/date_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="연구종료"
+            android:textSize="14dp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintLeft_toRightOf="@id/wave"
+            app:layout_constraintTop_toBottomOf="@id/support_organization"
+            />
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="진행상태"
+            android:textSize="14dp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintTop_toBottomOf="@id/support_organization"
+            app:layout_constraintBaseline_toBaselineOf="@id/classification"
+            app:layout_constraintEnd_toEndOf="@id/custom_researchlist"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

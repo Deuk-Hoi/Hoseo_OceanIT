@@ -1,0 +1,289 @@
+<resources>
+    <string name="app_name">해양IT융합기술연구소</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="welcom">해양 IT 연구소 방문을 환영합니다.</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_privacy">개인정보 취급 방침</string>
+
+    <string name="introduce_tools">소 개</string>
+    <string name="member_tools">연구진 소개</string>
+    <string name="fields_tools">연구 분야</string>
+    <string name="result_tools">연구 성과</string>
+    <string name="question_tools">문의 게시판</string>
+    <string name="login_tools">로그인</string>
+    <string name="logout_tools">로그아웃</string>
+    <string name="additional_function">부가 기능</string>
+    <string name="location_tools">오시는길</string>
+    <string name="pcwed_tools">해양IT 웹사이트</string>
+    <string name="Ocean_data">분산형 수중관측 웹사이트</string>
+
+    <!--해양IT 한글화 과정-->
+
+    <!--메인 액티비티-->
+    <string name="welcomoceanit">해양 IT 융합기술연구소 \n홈페이지 방문을 환영합니다.</string>
+    <string name="introduce_text">소 개</string>
+    <string name="member_text">맴 버</string>
+    <string name="research_text">연구성과</string>
+    <string name="question_text">문의게시판</string>
+    <string name="result">연구성과</string>
+    <string name="location">오시는길</string>
+    <string name="research_btn">연구분야</string>
+    <string name="data_btn">수중관측</string>
+    <string name="loginbtn">로그인</string>
+    <string name="logoutbtn">로그아웃</string>
+    <string name="pcbtn">PC버전</string>
+    <string name="app_exit">애플리케이션 종료</string>
+    <string name="Dialog">해양IT 앱을 종료하시겠습니까?</string>
+    <string name="yes">종료</string>
+    <string name="no">취소</string>
+    <string name="logout_exit">로그아웃</string>
+    <string name="logoutDialog">로그아웃을 하시겠습니까?</string>
+    <string name="logoutyes">확인</string>
+    <string name="logout">로그아웃 되었습니다.</string>
+
+    <!--소개 액티비티-->
+    <string name="hello">연구소 소개</string>
+    <string name="hello2">해양IT 융합기술연구소 홈페이지 방문을 환영합니다.</string>
+    <string name="headtxt">▣ 인 사 말</string>
+    <string name="middle1">전 세계적으로 매년 약 8,200만 명의 인구가 증가하면서 향후 지구 전체 인구에 대한 식량, 에너지 및 자원 부족이 예상됩니다. 지구는 약 70%의 표면이 물로 구성되어 있고, 바다에는 전 세계 동식물의 약 80%가 있으며, 그 외에도 많은 자원이 있습니다.</string>
+    <string name="middle2">하지만 바다는 아직도 미지의 세계 입니다. 육상에서는 전기, 컴퓨터에 이어 4차 산업 혁명 기술이 여러 산업에 적용되고 있지만, 바다에서는 물속의 데이터를 실시간으로 수집하고 분석하기 위한 효율적인 통신망이 구축되어 있지 않은 실정입니다. </string>
+    <string name="middle3">해양 융합기술 연구소에서는 바다에서도 육지와 같이 자유로운 통신이 가능하고, 이를 통해 육상에서도 효율적으로 수중의 정보 관측, 제어 및 위치 추적 등을 수행할 수 있게 하는 수중 통신망/플랫폼 기술을 연구하고, 이를 통해 해양 신산업 발전에 기여합니다.</string>
+    <string name="middle4">이를 위해 해양IT 융합기술 연구소는 현재 분산형 수중 관측제어망 개발 등 수중 기지국 통신망 구축을 위한 대형 국가 연구개발사업을 수행하고 있으며, 많은 기업들과 산학 협력 및 민관군과 산학연이 함께하는 주기적인 포럼 및 세미나 개최를 통해 해양융합 분야에서 신해양산업을 주도할 수 있는 연구와 인력양성을 수행 하고 있습니다.</string>
+    <string name="endtxt">감사합니다.</string>
+    <string name="professor">연구소장 호서대학교 정보통신과 교수 고학림</string>
+    <string name="img1_Explanation">&lt;수중 통신망 활용방안&gt;</string>
+    <string name="history">▣ 연 혁</string>
+    <string name="Organization_chart">▣ 조 직 도</string>
+    <!--로그인-->
+    <string name="edit_id">아이디</string>
+    <string name="edit_pass">비밀번호</string>
+    <string name="saveidtxt">아이디 저장</string>
+    <string name="logingo">로그인</string>
+    <string name="create_account">신규 회원가입</string>
+
+    <string name="mismatch">아이디/비밀번호가 일치하지 않습니다.</string>
+    <string name="loginsucceeded">로그인 되었습니다.</string>
+
+
+
+    <!--회원가입-->
+    <string name="password_match">비밀번호가 일치합니다.</string>
+    <string name="password_not_match">비밀번호가 일치하지 않습니다.</string>
+    <string name="please_duplicate_cheke">중복확인을 해주세요.</string>
+    <string name="not_available_id">사용 불가 아이디 입니다.</string>
+    <string name="available_id">사용가능한 아이디 입니다.</string>
+    <string name="duplicate_id">중복된 아이디 입니다.</string>
+    <string name="Notification">알림</string>
+    <string name="available_id_do_you_use">사용가능한 아이디 입니다 사용하시겠습니까?</string>
+    <string name="use">사용</string>
+    <string name="will_use">사용 예정 아이디 입니다.</string>
+    <string name="cancel">취소</string>
+    <string name="ok">확인</string>
+    <string name="please_all_insert">필수 입력 칸을 모두 입력하시오.</string>
+    <string name="check_duplicate_id">아이디 중복을 검사 하세요.</string>
+    <string name="do_you_want_signup">회원가입을 하시겠습니까?</string>
+    <string name="completed_signup">회원가입이 완료되었습니다.</string>
+    <string name="error">오류</string>
+    <string name="unable_communicate">서버와 통신이 불가 합니다.</string>
+
+    <string name="create_account_txt">해양 IT 회원가입</string>
+    <string name="create_accounttxt">(*)표시는 필수 입력사항입니다.</string>
+    <string name="usernametxt">아이디 *</string>
+    <string name="passwordtxt">비밀번호 *</string>
+    <string name="password_same_cheke">비밀번호 확인 *</string>
+    <string name="create_nametxt">이름 (실명) *</string>
+    <string name="create_phonenumtxt">휴대폰 번호</string>
+    <string name="create_email_txt">이메일</string>
+    <string name="adress_txt">주소</string>
+    <string name="create_account_btn">회원가입</string>
+    <string name="duplicate_cheke">중복확인</string>
+
+    <string name="username_edit">아이디를 입력하세요</string>
+    <string name="passwordredit">비밀번호를 입력하세요</string>
+    <string name="password_same_cheke_edit">비밀번호를 한번 더 입력하세요</string>
+    <string name="create_nameedit">이름을 입력하세요</string>
+    <string name="create_phonenumedit">전화번호를 입력하세요</string>
+    <string name="create_email_edit">이메일을 입력하세요</string>
+    <string name="adress_edit">주소를 입력하세요</string>
+
+    <!--문의 게시판 메인-->
+    <string name="question_txt">문의게시판</string>
+    <string name="qnatxt">질문사항을 받습니다.</string>
+    <string name="question_btn">질문하기</string>
+
+    <!--문의 게시판 작성-->
+    <string name="questionedit_txt">문의게시판</string>
+    <string name="edittxt">게시글 작성</string>
+    <string name="questionsubmit">문의 등록</string>
+    <string name="titletxt">제목 *</string>
+    <string name="titleedit">제목을 입력하세요</string>
+    <string name="writertxt">작성자 *</string>
+    <string name="writeredit">작성자를 입력하세요</string>
+    <string name="contentsrtxt">내용 *</string>
+    <string name="contentsedit">내용을 입력하세요</string>
+    <string name="noticetxt">요청에 관한 세부정보를 입력하세요. 확인 후 가능한 빨리 자세한 답변을 드리겠습니다.</string>
+    <string name="submit_btn">제출하기</string>
+
+    <string name="want_save">저장 하시겠습니까?</string>
+    <string name="do_you_want_upload">문의게시판에 등록하시겠습니까?</string>
+    <string name="upload">등록</string>
+    <string name="upload_succeesed">문의게시판에 등록 되었습니다!</string>
+    <string name="quetion_cancel">취소</string>
+
+    <string name="question_warning">경고</string>
+    <string name="did_not_fill">내용을 전부 채우지 않았습니다.</string>
+    <string name="warning_ok">확인</string>
+
+    <string name="custom_write">손님</string>
+
+    <!--문의게시판 세부-->
+    <string name="question_edit">댓글을 입력하시오</string>
+    <string name="answer_btn">전송</string>
+    <string name="backlist_btn">목 록</string>
+
+    <!--연구분야 게시판 작성-->
+    <string name="researching_txt">연구분야</string>
+    <string name="researchingtxt">연구소의 연구분야 게시판</string>
+    <string name="researchedit_btn">작성하기</string>
+    <string name="maingo_btn">메인화면</string>
+
+    <string name="research_field_txt">연구 분야</string>
+    <string name="create_field_txt">게시글 작성</string>
+    <string name="classificationtxt">구분</string>
+    <string name="period_research">연구기간</string>
+    <string name="start_time">연구시작</string>
+    <string name="end_time">연구종료</string>
+    <string name="Support_Agency_ko_txt">지원기관 (한글)*</string>
+    <string name="Support_Agency_ko">지원기관 한글명을 입력하세요</string>
+    <string name="Support_Agency_en_txt">지원기관 (영어)*</string>
+    <string name="Support_Agency_en">지원기관 영문명을 입력하세요</string>
+    <string name="Research_Name_ko">과제명 (한글)*</string>
+    <string name="Research_Name_ko_txt">한글 과제명을 입력하세요</string>
+    <string name="Research_Name_en">과제명 (영어)*</string>
+    <string name="Research_Name_en_txt">영문 과제명을 입력하세요</string>
+    <string name="research_officer_ko">연구 책임자 (한글)*</string>
+    <string name="research_officer_ko_txt">연구 책임자 한글명을 입력하세요</string>
+    <string name="research_officer_en">연구 책임자 (영어)*</string>
+    <string name="research_officer_en_txt">연구 책임자 영문명을 입력하세요</string>
+    <string name="belong_research_officer_ko">책임자 소속 (한글)*</string>
+    <string name="belong_research_officer_ko_txt">책임자 소속 한글명을 입력하세요</string>
+    <string name="belong_research_officer_en">책임자 소속 (영어)*</string>
+    <string name="belong_research_officer_en_txt">책임자 소속 영문명을 입력하세요</string>
+    <string name="research_goal_ko">연구 목표 (한글)</string>
+    <string name="research_goal_ko_txt">연구목표를 한글로 입력하세요</string>
+    <string name="research_goal_en">연구 목표 (영어)</string>
+    <string name="research_goal_en_txt">연구목표를 영어로 입력하세요</string>
+    <string name="research_content_ko">연구 내용 (한글)</string>
+    <string name="research_content_ko_txt">연구내용을 한글로 입력하세요</string>
+    <string name="research_content_en">연구 내용 (영어)</string>
+    <string name="research_content_en_txt">연구내용을 영어로 입력하세요</string>
+    <string name="expected_performance_ko">기대 성과 (한글)</string>
+    <string name="expected_performance_ko_txt">기대 성과를 한글로 입력하세요</string>
+    <string name="expected_performance_en">기대 성과 (영어)</string>
+    <string name="expected_performance_en_txt">기대 성과를 영어로 입력하세요</string>
+    <string name="research_field_submit_btn">작성 완료</string>
+
+    <!--연구분야 등록 페이지 작성-->
+    <string name="field_warning">경고</string>
+    <string name="field_fill_all">필수 사항을 모두 입력하지 않았습니다.</string>
+    <string name="field_ok">확인</string>
+    <string name="field_want_save">저장 하시겠습니까?</string>
+    <string name="field_want_research_save">연구 현황 게시판에 등록하시겠습니까?</string>
+    <string name="field_submit">등록</string>
+    <string name="field_succeesed">연구 현황 게시판에 등록 되었습니다!</string>
+    <string name="field_cancel">취소</string>
+    <string name="field_insert_classification">구분을 입력하시오</string>
+    <string name="field_insert_date">날짜를 입력하시오</string>
+    <string name="field_error">오류</string>
+    <string name="no_communication">서버와 통신이 불가 합니다.</string>
+
+    <!--연구분야 세부 게시판 작성-->
+    <string name="main_organization_txt">주관 기관</string>
+    <string name="support_organization_txt">지원 기관</string>
+    <string name="research_director_position">소속</string>
+    <string name="research_director">책임자</string>
+    <string name="research_period">연구 기간</string>
+    <string name="research_state">연구 진행상태</string>
+    <string name="classification">분류</string>
+    <string name="research_goal">* 연구 목표</string>
+    <string name="research_contents">* 연구 내용</string>
+    <string name="research_result">* 연구 성과</string>
+
+    <!--연구성과 게시판 작성-->
+    <string name="result_txt">연구 성과</string>
+    <string name="resulttxt">연구 성과 게시판 입니다.</string>
+    <string name="research_resultedit_btn">작성하기</string>
+    <string name="Maingo_btn">메인화면</string>
+
+    <!--연구성과 등록 페이지 작성-->
+    <string name="result_warning">경고</string>
+    <string name="result_insert_classification">구분을 입력하시오</string>
+    <string name="result_ok">확인</string>
+    <string name="result_fill_all">필수 사항을 모두 입력하지 않았습니다.</string>
+    <string name="result_insert_date"> 발표일을 입력하시오</string>
+    <string name="result_insert_country">국가명을 입력하시오</string>
+    <string name="result_want_save">저장 하시겠습니까?</string>
+    <string name="result_want_research_save">연구 성과 게시판에 등록하시겠습니까?</string>
+    <string name="result_succeesed">연구 성과 게시판에 등록 되었습니다!</string>
+    <string name="result_cancel">취소</string>
+    <string name="result_error">오류</string>
+    <string name="result_submit">등록</string>
+    <string name="result_no_communication">서버와 통신이 불가 합니다.</string>
+
+    <string name="research_result_txt">연구 성과</string>
+    <string name="create_result_txt">게시글 작성</string>
+    <string name="result_classificationtxt">구분</string>
+    <string name="announcement_date">발표일</string>
+    <string name="announcement_date_txt">발표일</string>
+    <string name="thesis_name_ko_txt">논문 / 특허 / 발표 이름 (한글)*</string>
+    <string name="thesis_name_ko">논문 / 특허 / 발표 한글명을 입력하세요</string>
+    <string name="thesis_name_en_txt">논문 / 특허 / 발표 이름 (영어)*</string>
+    <string name="thesis_name_en">논문 / 특허 / 발표 영문명을 입력하세요</string>
+    <string name="academic_society_academic_name_ko_txt">학회/학술지명 (한글)*</string>
+    <string name="academic_society_academic_name_ko">한글 학회/학술지명을 입력하세요</string>
+    <string name="academic_society_academic_name_en_txt">학회/학술지명 (영어)*</string>
+    <string name="academic_society_academic_name_en">영문 학회/학술지명을 입력하세요</string>
+    <string name="author_ko">저자 (한글)*</string>
+    <string name="author_ko_txt">저자의 한글명을 입력하세요</string>
+    <string name="author_en">저자 (영어)*</string>
+    <string name="author_en_txt">저자의 영문명을 입력하세요</string>
+    <string name="presentation_medium_ko">발표 매체(한글)*</string>
+    <string name="presentation_medium_ko_txt">발표 매체 한글명을 입력하세요</string>
+    <string name="presentation_medium_en">발표 매체(영어)*</string>
+    <string name="presentation_medium_en_txt">발표 매체 영문명을 입력하세요</string>
+    <string name="country">국가명</string>
+    <string name="related_task_ko">관련 과제 (한글)</string>
+    <string name="related_task_ko_txt">관련 과제를 한글로 입력하세요</string>
+    <string name="related_task_en">관련 과제 (영어)</string>
+    <string name="related_task_en_txt">관련 과제를 영어로 입력하세요</string>
+    <string name="abstract_ko">초록 (한글)</string>
+    <string name="abstract_ko_txt">초록을 한글로 입력하세요</string>
+    <string name="abstract_en">초록 (영어)</string>
+    <string name="abstract_en_txt">초록을 영어로 입력하세요</string>
+    <string name="research_result_submit_btn">작성 완료</string>
+
+    <!--연구성과 세부 게시판 작성-->
+    <string name="rmain_organization_txt">주관기관</string>
+    <string name="academic_journal">학회 / 학술지명</string>
+    <string name="p_date">발표일</string>
+    <string name="country_txt">국가명</string>
+    <string name="announce_media">발표 매체</string>
+    <string name="rclassification">구분</string>
+    <string name="writers">저자</string>
+    <string name="relation_task">* 관련 과제</string>
+    <string name="abstract_txt">* 초록</string>
+
+    <!--멤버 액티비티-->
+    <string name="member">연구진 소개</string>
+    <string name="member_txt">해양IT융합기술연구소 멤버를 소개합니다!</string>
+
+    <!--멤버 세부 액티비티-->
+    <string name="careertxt">* 세부 경력</string>
+    <string name="school">출신 학교</string>
+    <string name="major">전공</string>
+    <string name="degree">학위명</string>
+    <string name="callbtn">전화걸기</string>
+
+
+</resources>

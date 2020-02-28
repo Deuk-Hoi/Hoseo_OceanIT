@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/introduce_tools"
+            android:icon="@drawable/introduce_black"
+            android:title="@string/introduce_tools"/>
+        <item
+            android:id="@+id/member_tools"
+            android:icon="@drawable/member_menu"
+            android:title="@string/member_tools" />
+        <item
+            android:id="@+id/fields_tools"
+            android:icon="@drawable/research_fields"
+            android:title="@string/fields_tools" />
+        <item
+            android:id="@+id/result_tools"
+            android:icon="@drawable/resurch_result"
+            android:title="@string/result_tools" />
+        <item
+            android:id="@+id/question_tools"
+            android:icon="@drawable/qna"
+            android:title="@string/question_tools" />
+    </group>
+
+    <item android:title="@string/additional_function">
+        <menu>
+            <item
+                android:id="@+id/location_tools"
+                android:icon="@drawable/location"
+                android:title="@string/location_tools" />
+            <item
+            android:id="@+id/pcwed_tools"
+            android:icon="@drawable/pcwed"
+            android:title="@string/pcwed_tools" />
+            <item
+                android:id="@+id/Ocean_data"
+                android:icon="@drawable/oceandata"
+                android:title="@string/Ocean_data" />
+        </menu>
+    </item>
+
+</menu>

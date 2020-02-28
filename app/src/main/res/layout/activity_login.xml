@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/login_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="#2FFFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/loginback"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OceanIT Login"
+        android:textSize="35dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/edit_id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_id"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#C3FFFFFF"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:hint="@string/edit_id"
+        android:textColorHint="#000000"
+        android:drawableLeft="@drawable/login_id"
+        android:drawablePadding="7dp"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <EditText
+        android:id="@+id/edit_pass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#C3FFFFFF"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:drawablePadding="7dp"
+        android:inputType="textPassword"
+        android:hint="@string/edit_pass"
+        android:textColorHint="#000000"
+        android:drawableLeft="@drawable/login_pass"
+        app:layout_constraintTop_toBottomOf="@id/edit_id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/save_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:buttonTint="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/edit_pass"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"/>
+
+    <TextView
+        android:id="@+id/saveidtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/saveidtxt"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/logingo"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintLeft_toLeftOf="@id/save_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_pass" />
+
+    <Button
+        android:id="@+id/logingo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logingo"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="#C25385C1"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_pass"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#FFF200"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/saveidtxt"
+        app:layout_constraintLeft_toLeftOf="@id/save_id"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

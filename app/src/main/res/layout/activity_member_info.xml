@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".Member_info">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Member Profile"
+                android:textSize="30dp"/>
+
+            <RelativeLayout
+                android:id="@+id/tablelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp">
+
+
+                <ImageView
+                    android:id="@+id/member_image2"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp" />
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="12dp"
+                    android:layout_toRightOf="@id/member_image2"
+                    android:gravity="center"
+                    android:text="이름"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/member_image2"
+                    android:padding="12dp"
+                    android:layout_below="@id/name"
+                    android:gravity="center"
+                    android:text="소속"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/call"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/member_image2"
+                    android:padding="12dp"
+                    android:layout_below="@id/position"
+                    android:gravity="center"
+                    android:text="구내전화"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/member_image2"
+                    android:padding="12dp"
+                    android:layout_below="@id/call"
+                    android:gravity="center"
+                    android:text="이메일"
+                    android:textSize="16dp"                    />
+
+                <TextView
+                    android:id="@+id/careertxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/email"
+                    android:text="@string/careertxt"
+                    android:textSize="25dp"/>
+
+
+                <TableLayout
+                    android:id="@+id/tableview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/careertxt">
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/school"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:background="#649DE7"
+                            android:gravity="center"
+                            android:text="@string/school"
+                            android:textColor="#FFFFFF"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:id="@+id/major"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:background="#649DE7"
+                            android:gravity="center"
+                            android:text="@string/major"
+                            android:textColor="#FFFFFF"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:id="@+id/degree"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:background="#649DE7"
+                            android:gravity="center"
+                            android:text="@string/degree"
+                            android:textColor="#FFFFFF"
+                            android:layout_weight="1"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/bachelor_school"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:text="학사학교"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:id="@+id/bachelor_major"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:text="학사전공"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:id="@+id/bachelor_degree"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:text="학사"
+                            android:layout_weight="1"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/master_school"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:text="석사학교"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:id="@+id/master_major"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:text="석사전공"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:id="@+id/master_degree"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:text="석사"
+                            android:layout_weight="1"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/doctor_school"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:text="박사학교"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:id="@+id/doctor_major"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:text="박사전공"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:id="@+id/doctor_degree"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:text="박사"
+                            android:layout_weight="1"/>
+                    </TableRow>
+                </TableLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tablelayout">
+
+                <Button
+                    android:id="@+id/callbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/callbtn"
+                    android:textSize="17dp"
+                    android:background="#6674FD"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+</ScrollView>

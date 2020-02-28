@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="researcheditmenu">
+
+        <item >Select</item>
+        <item >Consignment</item>
+        <item >Cooperation</item>
+        <item >Service</item>
+        <item >Joint</item>
+        <item >Subject</item>
+
+    </string-array>
+</resources>

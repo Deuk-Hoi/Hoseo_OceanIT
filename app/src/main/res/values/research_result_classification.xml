@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="resulteditmenu">
+
+        <item >Select</item>
+        <item >Thesis</item>
+        <item >Patent</item>
+        <item >Announcement</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="researchresultmenu">
+        <item >전체 보기</item>
+        <item >논 문</item>
+        <item >특 허</item>
+        <item >발 표</item>
+        <item >저 서</item>
+    </string-array>
+
+</resources>

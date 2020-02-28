@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="researchingmenu">
+        <item >전체 보기</item>
+        <item >진행 과제</item>
+        <item >완료 과제</item>
+    </string-array>
+</resources>

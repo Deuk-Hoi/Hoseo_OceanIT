@@ -1,0 +1,290 @@
+<resources>
+    <string name="app_name">Ocean IT</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="welcom">Welcome to the Ocean IT Institute.</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_privacy">Privacy Policy</string>
+
+    <string name="introduce_tools">Introduce</string>
+    <string name="member_tools">Member</string>
+    <string name="fields_tools">Research Fields</string>
+    <string name="result_tools">Research Results</string>
+    <string name="question_tools">Question</string>
+    <string name="login_tools">Login</string>
+    <string name="logout_tools">Logout</string>
+    <string name="additional_function">Additional function</string>
+    <string name="location_tools">Directions</string>
+    <string name="pcwed_tools">Ocean IT Web site</string>
+    <string name="Ocean_data">Ocean Data. Web</string>
+
+
+    <!--해양IT 영문화 과정-->
+
+    <!--메인 액티비티-->
+    <string name="welcomoceanit">Ocean IT Research Institute\n Welcome to visit our homepage</string>
+    <string name="introduce_text">Introduce</string>
+    <string name="member_text">Memeber</string>
+    <string name="research_text">Result</string>
+    <string name="question_text">Question</string>
+    <string name="result">Result</string>
+    <string name="location">Location</string>
+    <string name="research_btn">Fields</string>
+    <string name="data_btn">Data wed</string>
+    <string name="loginbtn">Login</string>
+    <string name="logoutbtn">Logout</string>
+    <string name="pcbtn">PC WEB</string>
+    <string name="app_exit">Application shutdown</string>
+    <string name="Dialog">Are you sure you want to exit the Ocean IT Application?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="logout_exit">Log out</string>
+    <string name="logoutDialog">Are you sure you want to log out?</string>
+    <string name="logoutyes">YES</string>
+    <string name="logout">You are logged out.</string>
+
+    <!--소개 액티비티-->
+    <string name="hello">Introduction</string>
+    <string name="hello2">Ocean IT Research Institute We welcome you to visit our homepage</string>
+    <string name="headtxt">▣ Greetings</string>
+    <string name="middle1">With an estimated 82 million people growing annually worldwide, food, energy and resource shortages are expected for the entire global population in the future. Earth is made up of about 70% of the surface, and there are about 80% of the worlds flora and fauna in the ocean, and there are many other resources.</string>
+    <string name="middle2">But the sea is still an unknown world. On land, the Fourth Industrial Revolution technology is being applied to various industries in addition to electricity and computers, but there is no efficient communication network in the sea to collect and analyze data in the water in real time.</string>
+    <string name="middle3">The Maritime Convergence Technology Research Institute researches underwater communication network, platform technology that enables free communication in the sea as well as on land, thereby enabling efficient underwater observation, control, and location tracking on land. Contribute to the development of new industries.</string>
+    <string name="middle4">To this end, the Ocean IT Convergence Technology Research Institute is currently conducting large-scale national R &amp; D projects for the development of underwater base station communication networks, including the development of distributed underwater observation control networks, and regular forums and seminars with industry-academic cooperation and public-private military Through this program, we are conducting research and human resource development to lead the new marine industry in the field of marine convergence.</string>
+    <string name="endtxt">Thank you.</string>
+    <string name="professor">Director of  Hoseo University Department of Information and Communication\nProfessor Ko Hak-lim</string>
+    <string name="img1_Explanation">&lt;Underwater communication network utilization plan&gt;</string>
+    <string name="history">▣ History</string>
+    <string name="Organization_chart">▣ Organization</string>
+    <!--로그인-->
+    <string name="edit_id">Username</string>
+    <string name="edit_pass">Password</string>
+    <string name="saveidtxt">Stay Username</string>
+    <string name="logingo">Login</string>
+    <string name="create_account">Create Account</string>
+
+    <string name="mismatch">ID/password mismatch.</string>
+    <string name="loginsucceeded">Login succeeded.</string>
+
+
+    <!--회원가입-->
+    <string name="password_match">Password matches.</string>
+    <string name="password_not_match">Password doesn\'t match.</string>
+    <string name="please_duplicate_cheke">Please check the duplicates.</string>
+    <string name="not_available_id">This ID is not available.</string>
+    <string name="available_id">This ID is available.</string>
+    <string name="duplicate_id">This is a duplicate ID.</string>
+    <string name="Notification">Notification</string>
+    <string name="available_id_do_you_use">This ID is available. Do you want to use it?</string>
+    <string name="use">USE</string>
+    <string name="will_use">This is the ID that will be used.</string>
+    <string name="cancel">CANCEL</string>
+    <string name="ok">OK</string>
+    <string name="please_all_insert">Please enter all required fields.</string>
+    <string name="check_duplicate_id">Check for duplicate ID.</string>
+    <string name="do_you_want_signup">Would you like to sign up?</string>
+    <string name="completed_signup">Sign up has been completed.</string>
+    <string name="error">error</string>
+    <string name="unable_communicate">Unable to communicate with the server.</string>
+
+    <string name="create_account_txt">Ocean IT Join</string>
+    <string name="create_accounttxt">(*)Display is mandatory.</string>
+    <string name="usernametxt">Username *</string>
+    <string name="passwordtxt">Password *</string>
+    <string name="password_same_cheke">Password Reconfirmation *</string>
+    <string name="create_nametxt">Name (Real Name) *</string>
+    <string name="create_phonenumtxt">Phone Number</string>
+    <string name="create_email_txt">Email</string>
+    <string name="adress_txt">Address</string>
+    <string name="create_account_btn">Sign up</string>
+    <string name="duplicate_cheke">Cheke</string>
+
+    <string name="username_edit">Please enter your ID</string>
+    <string name="passwordredit">Please enter your Password</string>
+    <string name="password_same_cheke_edit">Please enter your password once more</string>
+    <string name="create_nameedit">Please enter your name</string>
+    <string name="create_phonenumedit">Please enter your phone number</string>
+    <string name="create_email_edit">Please enter e-mail</string>
+    <string name="adress_edit">Please enter your address</string>
+
+    <!--문의 게시판 메인-->
+    <string name="question_txt">Q &amp; A</string>
+    <string name="qnatxt">Do you have any questions?</string>
+    <string name="question_btn">Ask a question</string>
+
+    <!--문의 게시판 작성-->
+    <string name="questionedit_txt">Q &amp; A</string>
+    <string name="edittxt">Write a question</string>
+    <string name="questionsubmit">Register your question</string>
+    <string name="titletxt">Title *</string>
+    <string name="titleedit">Please enter a title</string>
+    <string name="writertxt">Writer *</string>
+    <string name="writeredit">Please enter a writer</string>
+    <string name="contentsrtxt">Contents *</string>
+    <string name="contentsedit">Please enter contents</string>
+    <string name="noticetxt">Please provide details about your request. We will respond to you as soon as possible after confirming.</string>
+    <string name="submit_btn">Submit</string>
+
+    <string name="want_save">Do you want to save it?</string>
+    <string name="do_you_want_upload">Do you want to register on the question board?</string>
+    <string name="upload">Submit</string>
+    <string name="upload_succeesed">You\'ve been registered on the question board!</string>
+    <string name="quetion_cancel">Cancel</string>
+
+    <string name="question_warning">Warning</string>
+    <string name="did_not_fill">You did not fill in all the contents.</string>
+    <string name="warning_ok">ok</string>
+
+    <string name="custom_write">Guest</string>
+
+    <!--문의게시판 세부-->
+    <string name="question_edit">Please enter a comment</string>
+    <string name="answer_btn">Send</string>
+    <string name="backlist_btn">Back to list</string>
+
+    <!--연구분야 게시판 작성-->
+    <string name="researching_txt">Research_Fields</string>
+    <string name="researchingtxt">Ocean IT Research Bulletin</string>
+    <string name="researchedit_btn">Create</string>
+    <string name="maingo_btn">Go to Main</string>
+
+    <!--연구분야 등록 페이지 작성-->
+    <string name="field_warning">Warning</string>
+    <string name="field_fill_all">You have not entered all required fields.</string>
+    <string name="field_ok">ok</string>
+    <string name="field_want_save">Do you want to save it?</string>
+    <string name="field_want_research_save">Do you want to register on the Field Of Research?</string>
+    <string name="field_submit">Submit</string>
+    <string name="field_succeesed">You\'ve been registered on the Field Of Research!</string>
+    <string name="field_cancel">Cancel</string>
+    <string name="field_insert_classification">Please enter a classification</string>
+    <string name="field_insert_date">Please enter a date</string>
+    <string name="field_error">error</string>
+    <string name="no_communication">No communication with the server.</string>
+
+    <string name="research_field_txt">Field of Research</string>
+    <string name="create_field_txt">Bulletin of research field of institute</string>
+    <string name="classificationtxt">Classification</string>
+    <string name="period_research">Research period</string>
+    <string name="start_time">Start of research</string>
+    <string name="end_time">End of study</string>
+    <string name="Support_Agency_ko_txt">Support agency (Korean)*</string>
+    <string name="Support_Agency_ko">Enter Korean name of Support agency</string>
+    <string name="Support_Agency_en_txt">Support agency (English)*</string>
+    <string name="Support_Agency_en">Enter English name of Support agency</string>
+    <string name="Research_Name_ko">Research Name (Korean)*</string>
+    <string name="Research_Name_ko_txt">Please enter Korean Research Name</string>
+    <string name="Research_Name_en">Research Name (English)*</string>
+    <string name="Research_Name_en_txt">Please enter English Research Name</string>
+    <string name="research_officer_ko">Research Officer (Korean)*</string>
+    <string name="research_officer_ko_txt">Please enter Korean name of Research Officer</string>
+    <string name="research_officer_en">Research Officer (English)*</string>
+    <string name="research_officer_en_txt">Please enter English name of Research Officer</string>
+    <string name="belong_research_officer_ko">Belong to Research Officer (Korean)*</string>
+    <string name="belong_research_officer_ko_txt">Enter your Belong to Research Officer in Korean</string>
+    <string name="belong_research_officer_en">Belong to Research Officer (English)*</string>
+    <string name="belong_research_officer_en_txt">Enter your Belong to Research Officer in English</string>
+    <string name="research_goal_ko">Research Goal (Korean)</string>
+    <string name="research_goal_ko_txt">Enter your research goals in Korean</string>
+    <string name="research_goal_en">Research Goal (English)</string>
+    <string name="research_goal_en_txt">Enter your research goals in English</string>
+    <string name="research_content_ko">Research Content (Korean)</string>
+    <string name="research_content_ko_txt">Enter your research content in Korean</string>
+    <string name="research_content_en">Research Content (English)</string>
+    <string name="research_content_en_txt">Enter your research content in English</string>
+    <string name="expected_performance_ko">Expected Performance (Korean)</string>
+    <string name="expected_performance_ko_txt">Enter your research content in Korean</string>
+    <string name="expected_performance_en">Expected Performance (English)</string>
+    <string name="expected_performance_en_txt">Enter your research content in English</string>
+    <string name="research_field_submit_btn">submit</string>
+
+
+    <!--연구분야 세부 게시판 작성-->
+    <string name="main_organization_txt">Organisation</string>
+    <string name="support_organization_txt">Support Agency</string>
+    <string name="research_director_position">Affiliation</string>
+    <string name="research_director">Name</string>
+    <string name="research_period">Period Of Research</string>
+    <string name="research_state">Research Progress</string>
+    <string name="classification">Classification</string>
+    <string name="research_goal">* Research Goal</string>
+    <string name="research_contents">* Research Content</string>
+    <string name="research_result">* Research Performance</string>
+
+    <!--연구성과 게시판 작성-->
+    <string name="result_txt">Research Performance</string>
+    <string name="resulttxt">This is a research performance bulletin.</string>
+    <string name="research_resultedit_btn">Create</string>
+    <string name="Maingo_btn">Go to Main</string>
+
+    <!--연구성과 등록 페이지 작성-->
+    <string name="result_warning">Warning</string>
+    <string name="result_insert_classification">Please enter a classification</string>
+    <string name="result_ok">ok</string>
+    <string name="result_fill_all">You have not entered all required fields.</string>
+    <string name="result_insert_date">Please enter a date</string>
+    <string name="result_insert_country">Please enter your country name</string>
+    <string name="result_want_save">Do you want to save it?</string>
+    <string name="result_want_research_save">Do you want to register with the Research Performance Bulletin?</string>
+    <string name="result_succeesed">You\'ve been registered on the Research Performance Bulletin!</string>
+    <string name="result_cancel">cancel</string>
+    <string name="result_error">error</string>
+    <string name="result_submit">submit</string>
+    <string name="result_no_communication">No communication with the server.</string>
+
+    <string name="research_result_txt">Research Performance</string>
+    <string name="create_result_txt">Create Poster</string>
+    <string name="result_classificationtxt">Sortation</string>
+    <string name="announcement_date">Announcement Date</string>
+    <string name="announcement_date_txt">Announcement Date</string>
+    <string name="thesis_name_ko_txt">Thesis / patent / Announcement name (Korean)*</string>
+    <string name="thesis_name_ko">Please enter the Korean name of the Thesis/patent/Announcement</string>
+    <string name="thesis_name_en_txt">Thesis / patent / Announcement name (English)*</string>
+    <string name="thesis_name_en">Please enter the English name of the Thesis/patent/Announcement</string>
+    <string name="academic_society_academic_name_ko_txt">Society / Academic (Korean)*</string>
+    <string name="academic_society_academic_name_ko">Enter the Korean Society / Academic Name</string>
+    <string name="academic_society_academic_name_en_txt">Society / Academic (English)*</string>
+    <string name="academic_society_academic_name_en">Enter the English Society / Academic Name</string>
+    <string name="author_ko">Author (Korean)*</string>
+    <string name="author_ko_txt">Enter the Korean name of the author</string>
+    <string name="author_en">Author (English)*</string>
+    <string name="author_en_txt">Enter the English name of the author</string>
+    <string name="presentation_medium_ko">Presentation medium (Korean)*</string>
+    <string name="presentation_medium_ko_txt">Enter Korean name for presentation media</string>
+    <string name="presentation_medium_en">Presentation medium (English)*</string>
+    <string name="presentation_medium_en_txt">Enter English name for presentation media</string>
+    <string name="country">Country</string>
+    <string name="related_task_ko">Related task (Korean)</string>
+    <string name="related_task_ko_txt">Please enter the relevant task in Korean</string>
+    <string name="related_task_en">Related task (English)</string>
+    <string name="related_task_en_txt">Please enter the relevant task in English</string>
+    <string name="abstract_ko">Abstract (Korean)</string>
+    <string name="abstract_ko_txt">Enter abstract in Korean</string>
+    <string name="abstract_en">Abstract (English)</string>
+    <string name="abstract_en_txt">Enter abstract in English</string>
+    <string name="research_result_submit_btn">submit</string>
+
+    <!--연구성과 세부 게시판 작성-->
+    <string name="rmain_organization_txt">Organisation</string>
+    <string name="academic_journal">Academic Society/Academic Name</string>
+    <string name="p_date">Announcement Date</string>
+    <string name="country_txt">Country</string>
+    <string name="announce_media">Presentation Medium</string>
+    <string name="rclassification">Sortation</string>
+    <string name="writers">Author</string>
+    <string name="relation_task">* Related task</string>
+    <string name="abstract_txt">* Abstract</string>
+
+    <!--멤버 액티비티-->
+    <string name="member">Members Introduction</string>
+    <string name="member_txt">Introduce Members of Ocean IT Lab!</string>
+
+    <!--멤버 세부 액티비티-->
+    <string name="careertxt">Detailed Career</string>
+    <string name="school">School</string>
+    <string name="major">Major</string>
+    <string name="degree">Degree</string>
+    <string name="callbtn">Dialing</string>
+
+
+</resources>

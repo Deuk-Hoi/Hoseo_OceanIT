@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/custom_resultlist"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/result_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="학술명"
+            android:textSize="21dp"
+            android:textColor="#000000"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/academic_journal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="학술지명"
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:layout_below="@id/result_name"
+            />
+        <TextView
+            android:id="@+id/classification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="분류"
+            android:textSize="14dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/academic_journal"
+            />
+
+        <TextView
+            android:id="@+id/writers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:text="저자"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:layout_toLeftOf="@id/date"
+            android:layout_toRightOf="@id/classification"
+            android:layout_alignBottom="@id/classification"
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="발표일자"
+            android:textSize="14dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@id/classification"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
