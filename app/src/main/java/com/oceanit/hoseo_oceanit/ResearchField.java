@@ -43,8 +43,6 @@ public class ResearchField extends AppCompatActivity {
     private static final String TAG_SUPPORT_ORGANIZATION_EN = "support_organization_en";
     private static final String TAG_DATE_START = "date_start";
     private static final String TAG_DATE_END = "date_end";
-    private static final String TAG_CLASSIFICATION_KO = "classification_ko";
-    private static final String TAG_CLASSIFICATION_EN = "classification_en";
     private static final String TAG_PROGRESS_KO = "연구진행중";
     private static final String TAG_PROGRESS_EN = "Researching";
     private static final String TAG_FINISH_KO = "연구완료";
@@ -152,7 +150,7 @@ public class ResearchField extends AppCompatActivity {
                 //Toast.makeText(getApplicationContext(),vo.toString(), Toast.LENGTH_LONG).show();
 
                 rid = vo.toString();
-                Log.e("ridid2",rid);
+                Log.e("ridid3",rid);
                 int indexnum = rid.indexOf("rid");
                 rid = rid.substring(indexnum);
                 if(rid.indexOf(",")!=-1)
@@ -261,7 +259,6 @@ public class ResearchField extends AppCompatActivity {
                     String support_organization = c.getString(TAG_SUPPORT_ORGANIZATION_KO);
                     String date_start = c.getString(TAG_DATE_START);
                     String date_end = c.getString(TAG_DATE_END);
-                    String classification = c.getString(TAG_CLASSIFICATION_KO);
                     String progress = TAG_PROGRESS_KO;
                     String finish = TAG_FINISH_KO;
 
@@ -277,7 +274,6 @@ public class ResearchField extends AppCompatActivity {
                         Research_all.put(TAG_SUPPORT_ORGANIZATION_KO, support_organization);
                         Research_all.put(TAG_DATE_START, date_start);
                         Research_all.put(TAG_DATE_END, date_end);
-                        Research_all.put(TAG_CLASSIFICATION_KO, classification);
                         if(Time>0) {
                             Research_all.put(TAG_PROGRESS_KO, "연구진행중");
                         }
@@ -295,7 +291,6 @@ public class ResearchField extends AppCompatActivity {
                         Research_progress.put(TAG_SUPPORT_ORGANIZATION_KO, support_organization);
                         Research_progress.put(TAG_DATE_START, date_start);
                         Research_progress.put(TAG_DATE_END, date_end);
-                        Research_progress.put(TAG_CLASSIFICATION_KO, classification);
                         Research_progress.put(TAG_PROGRESS_KO, progress);
 
                         research_progresslist.add(Research_progress);
@@ -307,7 +302,6 @@ public class ResearchField extends AppCompatActivity {
                         Research_finish.put(TAG_SUPPORT_ORGANIZATION_KO, support_organization);
                         Research_finish.put(TAG_DATE_START, date_start);
                         Research_finish.put(TAG_DATE_END, date_end);
-                        Research_finish.put(TAG_CLASSIFICATION_KO, classification);
                         Research_finish.put(TAG_FINISH_KO, finish);
 
                         research_finishlist.add(Research_finish);
@@ -317,20 +311,20 @@ public class ResearchField extends AppCompatActivity {
                 //이곳은 포지션 0 1 에따라서 달라지게 만들면 깰끔.
                 if(stateposition==0) {
                     ListAdapter adapter = new SimpleAdapter(ResearchField.this, research_ALLlist, R.layout.custom_researchfield,
-                            new String[]{TAG_RESEARCH_NAME_KO, TAG_SUPPORT_ORGANIZATION_KO, TAG_DATE_START, TAG_DATE_END, TAG_CLASSIFICATION_KO,TAG_PROGRESS_KO}, new int[]{R.id.research_name, R.id.support_organization, R.id.date_start, R.id.date_end, R.id.classification, R.id.progress});
+                            new String[]{TAG_RESEARCH_NAME_KO, TAG_SUPPORT_ORGANIZATION_KO, TAG_DATE_START, TAG_DATE_END,TAG_PROGRESS_KO}, new int[]{R.id.research_name, R.id.support_organization, R.id.date_start, R.id.date_end, R.id.progress});
                     listView.setAdapter(adapter);
                     Toast.makeText(getApplicationContext(), "전체과제", Toast.LENGTH_LONG).show();
                 }
                 else if(stateposition==1) {
                     ListAdapter adapter = new SimpleAdapter(ResearchField.this, research_progresslist, R.layout.custom_researchfield,
-                            new String[]{TAG_RESEARCH_NAME_KO, TAG_SUPPORT_ORGANIZATION_KO, TAG_DATE_START, TAG_DATE_END, TAG_CLASSIFICATION_KO, TAG_PROGRESS_KO}, new int[]{R.id.research_name, R.id.support_organization, R.id.date_start, R.id.date_end, R.id.classification, R.id.progress});
+                            new String[]{TAG_RESEARCH_NAME_KO, TAG_SUPPORT_ORGANIZATION_KO, TAG_DATE_START, TAG_DATE_END, TAG_PROGRESS_KO}, new int[]{R.id.research_name, R.id.support_organization, R.id.date_start, R.id.date_end, R.id.progress});
                     listView.setAdapter(adapter);
                     Toast.makeText(getApplicationContext(), "진행과제", Toast.LENGTH_LONG).show();
                 }
                 else if(stateposition == 2)
                 {
                     ListAdapter adapter = new SimpleAdapter(ResearchField.this, research_finishlist, R.layout.custom_researchfield,
-                            new String[]{TAG_RESEARCH_NAME_KO, TAG_SUPPORT_ORGANIZATION_KO, TAG_DATE_START, TAG_DATE_END, TAG_CLASSIFICATION_KO, TAG_FINISH_KO}, new int[]{R.id.research_name, R.id.support_organization, R.id.date_start, R.id.date_end, R.id.classification, R.id.progress});
+                            new String[]{TAG_RESEARCH_NAME_KO, TAG_SUPPORT_ORGANIZATION_KO, TAG_DATE_START, TAG_DATE_END, TAG_FINISH_KO}, new int[]{R.id.research_name, R.id.support_organization, R.id.date_start, R.id.date_end, R.id.progress});
                     listView.setAdapter(adapter);
                     Toast.makeText(getApplicationContext(), "완료과제", Toast.LENGTH_LONG).show();
                 }
@@ -349,7 +343,6 @@ public class ResearchField extends AppCompatActivity {
                     String support_organization = c.getString(TAG_SUPPORT_ORGANIZATION_EN);
                     String date_start = c.getString(TAG_DATE_START);
                     String date_end = c.getString(TAG_DATE_END);
-                    String classification = c.getString(TAG_CLASSIFICATION_EN);
                     String progress = TAG_PROGRESS_EN;
                     String finish = TAG_FINISH_EN;
 
@@ -365,7 +358,6 @@ public class ResearchField extends AppCompatActivity {
                         Research_all.put(TAG_SUPPORT_ORGANIZATION_EN, support_organization);
                         Research_all.put(TAG_DATE_START, date_start);
                         Research_all.put(TAG_DATE_END, date_end);
-                        Research_all.put(TAG_CLASSIFICATION_EN, classification);
                         if(Time>0) {
                             Research_all.put(TAG_PROGRESS_EN, "Researching");
                         }
@@ -382,7 +374,6 @@ public class ResearchField extends AppCompatActivity {
                         Research_progress.put(TAG_SUPPORT_ORGANIZATION_EN, support_organization);
                         Research_progress.put(TAG_DATE_START, date_start);
                         Research_progress.put(TAG_DATE_END, date_end);
-                        Research_progress.put(TAG_CLASSIFICATION_EN, classification);
                         Research_progress.put(TAG_PROGRESS_EN, progress);
 
                         research_progresslist.add(Research_progress);
@@ -394,7 +385,6 @@ public class ResearchField extends AppCompatActivity {
                         Research_finish.put(TAG_SUPPORT_ORGANIZATION_EN, support_organization);
                         Research_finish.put(TAG_DATE_START, date_start);
                         Research_finish.put(TAG_DATE_END, date_end);
-                        Research_finish.put(TAG_CLASSIFICATION_EN, classification);
                         Research_finish.put(TAG_FINISH_EN, finish);
 
                         research_finishlist.add(Research_finish);
@@ -403,20 +393,20 @@ public class ResearchField extends AppCompatActivity {
                 }
                 if(stateposition==0) {
                     ListAdapter adapter = new SimpleAdapter(ResearchField.this, research_ALLlist, R.layout.custom_researchfield,
-                            new String[]{TAG_RESEARCH_NAME_EN, TAG_SUPPORT_ORGANIZATION_EN, TAG_DATE_START, TAG_DATE_END, TAG_CLASSIFICATION_EN, TAG_PROGRESS_EN}, new int[]{R.id.research_name, R.id.support_organization, R.id.date_start, R.id.date_end, R.id.classification, R.id.progress});
+                            new String[]{TAG_RESEARCH_NAME_EN, TAG_SUPPORT_ORGANIZATION_EN, TAG_DATE_START, TAG_DATE_END, TAG_PROGRESS_EN}, new int[]{R.id.research_name, R.id.support_organization, R.id.date_start, R.id.date_end, R.id.progress});
                     listView.setAdapter(adapter);
                     Toast.makeText(getApplicationContext(), "View All", Toast.LENGTH_LONG).show();
                 }
                 else if(stateposition == 1) {
                     ListAdapter adapter = new SimpleAdapter(ResearchField.this, research_progresslist, R.layout.custom_researchfield,
-                            new String[]{TAG_RESEARCH_NAME_EN, TAG_SUPPORT_ORGANIZATION_EN, TAG_DATE_START, TAG_DATE_END, TAG_CLASSIFICATION_EN, TAG_PROGRESS_EN}, new int[]{R.id.research_name, R.id.support_organization, R.id.date_start, R.id.date_end, R.id.classification, R.id.progress});
+                            new String[]{TAG_RESEARCH_NAME_EN, TAG_SUPPORT_ORGANIZATION_EN, TAG_DATE_START, TAG_DATE_END, TAG_PROGRESS_EN}, new int[]{R.id.research_name, R.id.support_organization, R.id.date_start, R.id.date_end, R.id.progress});
                     listView.setAdapter(adapter);
                     Toast.makeText(getApplicationContext(), "Progress task", Toast.LENGTH_LONG).show();
                 }
                 else if(stateposition == 2)
                 {
                     ListAdapter adapter = new SimpleAdapter(ResearchField.this, research_finishlist, R.layout.custom_researchfield,
-                            new String[]{TAG_RESEARCH_NAME_EN, TAG_SUPPORT_ORGANIZATION_EN, TAG_DATE_START, TAG_DATE_END, TAG_CLASSIFICATION_EN, TAG_FINISH_EN}, new int[]{R.id.research_name, R.id.support_organization, R.id.date_start, R.id.date_end, R.id.classification, R.id.progress});
+                            new String[]{TAG_RESEARCH_NAME_EN, TAG_SUPPORT_ORGANIZATION_EN, TAG_DATE_START, TAG_DATE_END,  TAG_FINISH_EN}, new int[]{R.id.research_name, R.id.support_organization, R.id.date_start, R.id.date_end, R.id.progress});
                     listView.setAdapter(adapter);
                     Toast.makeText(getApplicationContext(), "Finish task", Toast.LENGTH_LONG).show();
                 }

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/research_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:gravity="center"
+            android:layout_alignEnd="@id/subjectivity"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/business"
+            android:textSize="15dp"
+            android:text="과제명"/>
+
+        <TextView
+            android:id="@+id/research_nametxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingLeft="5dp"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="7dp"
+            android:text="과제명 쓰는칸sadsadsadsadsadsadasdsaasdsadsadsadasda"
+            android:layout_toRightOf="@id/research_name"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/business"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/research_nametxt"
+            android:layout_alignEnd="@id/subjectivity"
+            android:layout_alignParentStart="true"
+            android:layout_above="@id/department"
+            android:textSize="15dp"
+            android:text="사업명"/>
+        <TextView
+            android:id="@+id/business_nametxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:textSize="15dp"
+            android:layout_below="@id/research_nametxt"
+            android:layout_toRightOf="@id/business"
+            android:text="사업명 쓰는칸xcvcxvcxvcxvxcvcxvcxvcxvxvxcvcxvcxvcxxcvcxv"/>
+
+        <TextView
+            android:id="@+id/department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/business_nametxt"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@id/subjectivity"
+            android:textSize="15dp"
+            android:text="부처"/>
+
+        <TextView
+            android:id="@+id/departmenttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/business_nametxt"
+            android:layout_toRightOf="@id/department"
+            android:layout_alignEnd="@id/subjectivity_txt"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="15dp"
+            android:text="부처 쓰는곳sdfsfdssdfdsasdsadsa"/>
+
+        <TextView
+            android:id="@+id/support_organization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/business_nametxt"
+            android:layout_toRightOf="@id/departmenttxt"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="7dp"
+            android:layout_alignEnd="@id/research_txt"
+            android:text="지원기관"
+            android:textSize="15dp" />
+    <TextView
+        android:id="@+id/support_organizationtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gridback"
+        android:paddingTop="7dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="7dp"
+        android:layout_below="@id/business_nametxt"
+        android:layout_toRightOf="@id/support_organization"
+        android:layout_alignParentEnd="true"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="15dp"
+        android:text="지원기관 쓰는곳sdfdsfdsfdsfdsfdsfdsfdsfds"/>
+
+        <TextView
+            android:id="@+id/subjectivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/department"
+            android:textSize="15dp"
+            android:text="주관기관"/>
+
+        <TextView
+            android:id="@+id/subjectivity_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/department"
+            android:layout_toRightOf="@id/subjectivity"
+            android:layout_alignEnd="@id/organizationstxt"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="15dp"
+            android:text="주관기관 쓰는곳asdsadsaasdsadsadsa"/>
+
+
+        <TextView
+            android:id="@+id/organizations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/subjectivity"
+            android:textSize="15dp"
+            android:text="참여기관"/>
+
+        <TextView
+            android:id="@+id/organizationstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/subjectivity"
+            android:layout_toRightOf="@id/organizations"
+            android:layout_alignEnd="@id/datetxt"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="15dp"
+            android:text="참여기관 쓰는곳sads"/>
+
+        <TextView
+            android:id="@+id/research_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/departmenttxt"
+            android:layout_toRightOf="@id/subjectivity_txt"
+            android:layout_alignBottom="@id/organizationstxt"
+            android:textSize="15dp"
+            android:text="연구책임자"/>
+
+        <TextView
+            android:id="@+id/research_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/support_organization"
+            android:layout_toRightOf="@id/research_txt"
+            android:textSize="15dp"
+            android:text="성명"/>
+
+        <TextView
+            android:id="@+id/research_chargetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/support_organization"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@id/research_charge"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="15dp"
+            android:text="성명 쓰는곳sdfdsfdsfdssdfdsfsdf"/>
+
+        <TextView
+            android:id="@+id/research_charge_belong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/research_charge"
+            android:layout_toRightOf="@id/research_txt"
+            android:textSize="15dp"
+            android:text="소속"/>
+
+        <TextView
+            android:id="@+id/research_charge_belongtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/research_charge"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@id/research_charge"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="15dp"
+            android:text="소속 쓰는곳ㅁㄴㅇㄴㅁㅇㄴㅁ"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/organizations"
+            android:textSize="15dp"
+            android:text="연구기간"/>
+
+        <TextView
+            android:id="@+id/datetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/organizations"
+            android:layout_toRightOf="@id/date"
+            android:layout_alignEnd="@id/hide2"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="15dp"
+            android:text="연구기간 쓰는곳dsfsdfdsfdsfdsfdsfds"/>
+
+        <TextView
+            android:id="@+id/researchprogress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_alignEnd="@id/research_txt"
+            android:layout_below="@id/organizations"
+            android:layout_toRightOf="@id/datetxt"
+            android:textSize="15dp"
+            android:text="진행상태"/>
+
+        <TextView
+            android:id="@+id/researchprogresstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/organizations"
+            android:layout_toRightOf="@id/researchprogress"
+            android:layout_alignParentEnd="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="15dp"
+            android:text="연구기간 쓰는곳asdsadsadsaasdsa"/>
+
+
+
+        <TextView
+            android:id="@+id/hide1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/date"
+            android:textSize="15dp"
+            android:text="연구기간"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/hide2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/date"
+            android:layout_toRightOf="@id/hide1"
+            android:textSize="15dp"
+            android:text="연구기간 쓰는곳"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/hide3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_alignEnd="@id/research_txt"
+            android:layout_below="@id/date"
+            android:layout_toRightOf="@id/hide2"
+            android:textSize="15dp"
+            android:text="진행상태"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/hide4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/date"
+            android:layout_toRightOf="@id/hide3"
+            android:layout_alignParentEnd="true"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:text="연구기간 쓰는곳"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/research_purpose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/date"
+            android:layout_above="@id/research_contents"
+            android:textSize="15dp"
+            android:text="연구목표"/>
+
+        <TextView
+            android:id="@+id/research_purposetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/date"
+            android:layout_toRightOf="@id/research_purpose"
+            android:textSize="15dp"
+            android:text="연구목표 쓰는곳ssssssssssssssssssssssssssssssssssssssssss"/>
+
+        <TextView
+            android:id="@+id/research_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/research_purposetxt"
+            android:layout_above="@id/research_expected"
+            android:textSize="15dp"
+            android:text="연구내용"/>
+
+        <TextView
+            android:id="@+id/research_contentstxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/research_purposetxt"
+            android:layout_toRightOf="@id/research_contents"
+            android:textSize="15dp"
+            android:text="연구내용 쓰는곳sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"/>
+
+        <TextView
+            android:id="@+id/research_expected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/research_contentstxt"
+            android:layout_alignBottom="@id/research_expectedtxt"
+            android:textSize="15dp"
+            android:text="연구성과"/>
+
+        <TextView
+            android:id="@+id/research_expectedtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gridback"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@id/research_contentstxt"
+            android:layout_toRightOf="@id/research_expected"
+            android:textSize="15dp"
+            android:text="연구내용 쓰는곳asdddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

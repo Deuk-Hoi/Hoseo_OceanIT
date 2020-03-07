@@ -67,6 +67,8 @@
                 android:layout_marginTop="14dp"
                 android:layout_marginRight="15dp"
                 android:lineSpacingMultiplier="1.4"
+                android:drawableStart="@drawable/gohaklim"
+                android:drawablePadding="15dp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="@string/middle1" />
@@ -128,29 +130,6 @@
                 android:layout_below="@id/endtxt"
                 android:layout_alignParentEnd="true"/>
 
-            <ImageView
-                android:id="@+id/introduce_img1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/introduce1"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="15dp"
-                android:layout_below="@id/professor"/>
-
-            <TextView
-                android:id="@+id/img1_Explanation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/img1_Explanation"
-                android:singleLine="true"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:textColor="#000000"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@id/introduce_img1"/>
-
             <TextView
                 android:id="@+id/history"
                 android:layout_width="match_parent"
@@ -161,7 +140,7 @@
                 android:layout_marginTop="15dp"
                 android:textSize="25dp"
                 android:textColor="#5D8DC7"
-                android:layout_below="@id/img1_Explanation"/>
+                android:layout_below="@id/professor"/>
 
             <ImageView
                 android:id="@+id/history_img1"
