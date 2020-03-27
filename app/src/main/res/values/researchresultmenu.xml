@@ -2,11 +2,10 @@
 <resources>
 
     <string-array name="researchresultmenu">
-        <item >View All</item>
         <item >Thesis</item>
         <item >Patent</item>
         <item >Announcement</item>
-        <item>Production</item>
+        <item >Production</item>
     </string-array>
 
 </resources>

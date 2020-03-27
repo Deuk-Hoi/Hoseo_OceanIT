@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">해양IT융합기술연구소</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -6,10 +7,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_privacy">개인정보 취급 방침</string>
 
+    <!-- 메인 드로어 -->
     <string name="introduce_tools">소 개</string>
     <string name="member_tools">연구진 소개</string>
-    <string name="fields_tools">연구 분야</string>
-    <string name="result_tools">연구 성과</string>
+    <string name="active_tools">연구 활동</string>
+    <string name="archive_tools">자료실</string>
     <string name="question_tools">문의 게시판</string>
     <string name="login_tools">로그인</string>
     <string name="logout_tools">로그아웃</string>
@@ -18,17 +20,23 @@
     <string name="pcwed_tools">해양IT 웹사이트</string>
     <string name="Ocean_data">분산형 수중관측 웹사이트</string>
 
+    <!-- 활동 드로어 -->
+    <string name="research_project_tools">연구과제</string>
+    <string name="research_performance_tools">연구성과</string>
+    <string name="research_activities_tools">연구활동</string>
+    <string name="academic_activities_tools">학술활동</string>
+
     <!--해양IT 한글화 과정-->
 
     <!--메인 액티비티-->
     <string name="welcomoceanit">해양 IT 융합기술연구소 \n홈페이지 방문을 환영합니다.</string>
     <string name="introduce_text">소 개</string>
-    <string name="member_text">맴 버</string>
-    <string name="research_text">연구성과</string>
+    <string name="member_text">연구인력</string>
+    <string name="research_text">연구활동</string>
     <string name="question_text">문의게시판</string>
-    <string name="result">연구성과</string>
+    <string name="active">연구활동</string>
     <string name="location">오시는길</string>
-    <string name="research_btn">연구분야</string>
+    <string name="archive">자 료 실</string>
     <string name="data_btn">수중관측</string>
     <string name="loginbtn">로그인</string>
     <string name="logoutbtn">로그아웃</string>

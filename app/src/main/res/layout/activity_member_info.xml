@@ -199,6 +199,34 @@
                             android:text="박사"
                             android:layout_weight="1"/>
                     </TableRow>
+
+                    <TableRow
+                        android:id="@+id/subDoctor"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone">
+                        <TextView
+                            android:id="@+id/doctor_school2"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:text="박사학교"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:id="@+id/doctor_major2"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:text="박사전공"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:id="@+id/doctor_degree2"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:text="박사"
+                            android:layout_weight="1"/>
+                    </TableRow>
                 </TableLayout>
 
             </RelativeLayout>

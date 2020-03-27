@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/research_project_tools"
+            android:icon="@drawable/research_fields"
+            android:title="@string/research_project_tools"/>
+        <item
+            android:id="@+id/research_performance_tools"
+            android:icon="@drawable/research_result"
+            android:title="@string/research_performance_tools" />
+        <item
+            android:id="@+id/research_activities_tools"
+            android:icon="@drawable/active_b"
+            android:title="@string/research_activities_tools" />
+        <item
+            android:id="@+id/academic_activities_tools"
+            android:icon="@drawable/academic"
+            android:title="@string/academic_activities_tools" />
+    </group>
+
+</menu>

@@ -4,23 +4,28 @@ import android.content.Intent;
 import android.net.Uri;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 public class Member_info extends AppCompatActivity {
 
     TextView name,position,call,email,bachelor_school,bachelor_major,bachelor_degree
-            ,master_school,master_major,master_degree,doctor_school,doctor_major,doctor_degree;
+            ,master_school,master_major,master_degree,doctor_school,doctor_major,doctor_degree, doctor_school2,doctor_major2,doctor_degree2;
     ImageView member_image2;
-    String getintent[]=new String[14];
+    TableRow subDoctor;
+    String getintent[]=new String[17];
     Button callbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member_info);
+
+        subDoctor = (TableRow)findViewById(R.id.subDoctor);
 
         Intent intent = getIntent();
 
@@ -45,6 +50,11 @@ public class Member_info extends AppCompatActivity {
         email = (TextView)findViewById(R.id.email);
         getintent[4] = intent.getExtras().getString("email");
         email.setText(getintent[4]);
+
+        if(getintent[4].equals("kangchiwa@gmail.com"))
+        {
+            subDoctor.setVisibility(View.VISIBLE);
+        }
 
         bachelor_school = (TextView)findViewById(R.id.bachelor_school);
         getintent[5] = intent.getExtras().getString("bachelor_school");
@@ -81,6 +91,19 @@ public class Member_info extends AppCompatActivity {
         doctor_degree = (TextView)findViewById(R.id.doctor_degree);
         getintent[13] = intent.getExtras().getString("doctor_degree");
         doctor_degree.setText(getintent[13]);
+
+        doctor_school2 = (TextView)findViewById(R.id.doctor_school2);
+        getintent[14] = intent.getExtras().getString("doctor_school2");
+        doctor_school2.setText(getintent[14]);
+
+        doctor_major2 = (TextView)findViewById(R.id.doctor_major2);
+        getintent[15] = intent.getExtras().getString("doctor_major2");
+        doctor_major2.setText(getintent[15]);
+
+        doctor_degree2 = (TextView)findViewById(R.id.doctor_degree2);
+        getintent[16] = intent.getExtras().getString("doctor_degree2");
+        doctor_degree2.setText(getintent[16]);
+
 
         callbtn = (Button)findViewById(R.id.callbtn);
         callbtn.setOnClickListener(new View.OnClickListener() {

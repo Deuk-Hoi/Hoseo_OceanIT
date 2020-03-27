@@ -56,15 +56,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="1">
 
             <ImageButton
                 android:id="@+id/introduce_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_weight="1"
+                android:layout_weight="0.25"
                 android:background="#00FFFFFF"
                 android:src="@drawable/introduce" />
 
@@ -73,7 +73,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:layout_weight="0.25"
                 android:background="#00FFFFFF"
                 android:src="@drawable/member" />
 
@@ -82,7 +83,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:layout_weight="0.25"
                 android:background="#00FFFFFF"
                 android:src="@drawable/research" />
 
@@ -91,21 +93,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_weight="1"
+                android:layout_weight="0.25"
                 android:background="#00FFFFFF"
-                android:src="@drawable/question" />
+                android:src="@drawable/question2" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="1">
 
             <TextView
                 android:id="@+id/introduce_text"
                 android:layout_width="67dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0.25"
                 android:gravity="center"
                 android:text="@string/introduce_text"
                 android:textColor="#000000"
@@ -115,7 +118,7 @@
                 android:id="@+id/member_text"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0.25"
                 android:gravity="center"
                 android:text="@string/member_text"
                 android:textColor="#000000"
@@ -125,7 +128,7 @@
                 android:id="@+id/research_text"
                 android:layout_width="66dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0.25"
                 android:gravity="center"
                 android:text="@string/research_text"
                 android:textColor="#000000"
@@ -135,7 +138,7 @@
                 android:id="@+id/question_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0.25"
                 android:gravity="center"
                 android:text="@string/question_text"
                 android:textColor="#000000"
@@ -151,36 +154,36 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/result"
+                android:id="@+id/active"
                 android:layout_width="wrap_content"
                 android:layout_height="90dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:background="#79BE0E"
-                android:drawableRight="@drawable/result"
+                android:drawableRight="@drawable/active"
                 android:drawablePadding="-10dp"
                 android:gravity="left|bottom"
-                android:paddingBottom="10dp"
-                android:paddingRight="10dp"
                 android:paddingLeft="10dp"
-                android:text="@string/result"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/active"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/research_btn"
+                android:id="@+id/archive"
                 android:layout_width="wrap_content"
                 android:layout_height="90dp"
                 android:layout_weight="1"
                 android:background="#9142EB"
-                android:drawableRight="@drawable/subject"
+                android:drawableRight="@drawable/archive_w"
                 android:drawablePadding="-4dp"
                 android:gravity="left|bottom"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
-                android:text="@string/research_btn"
+                android:text="@string/archive"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
                 android:textStyle="bold" />

@@ -49,13 +49,11 @@ public class Research_result extends AppCompatActivity {
     ArrayList<HashMap<String,String>> research_license;
     ArrayList<HashMap<String,String>> research_announcement;
     ArrayList<HashMap<String,String>> research_production;
-    ArrayList<HashMap<String,String>> research_alllist;
 
     HashMap<String, String> result_thesis;
     HashMap<String, String> result_license;
     HashMap<String, String> result_announcement;
     HashMap<String, String> result_production;
-    HashMap<String, String> result_all;
 
     Tools tools = new Tools();
     String language = tools.language;
@@ -73,7 +71,6 @@ public class Research_result extends AppCompatActivity {
         research_license = new ArrayList<HashMap<String, String>>();
         research_announcement = new ArrayList<HashMap<String, String>>();
         research_production = new ArrayList<HashMap<String, String>>();
-        research_alllist = new ArrayList<HashMap<String, String>>();
 
         research_resultedit_btn = (Button) findViewById(R.id.research_resultedit_btn);
         Maingo_btn = (Button)findViewById(R.id.Maingo_btn);
@@ -108,35 +105,8 @@ public class Research_result extends AppCompatActivity {
         researching_resultspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                if(position==0)
-                {
-                    stateposition=position;
-                    getData(tools.URL+"/research_results/get_result");
-
-                }
-                else if(position==1)
-                {
-                    stateposition=position;
-                    getData(tools.URL+"/research_results/get_result");
-                }
-                else if(position==2)
-                {
-                    Log.e("thsis", String.valueOf(position));
-                    stateposition=position;
-                    getData(tools.URL+"/research_results/get_result");
-                }
-                else if(position==3)
-                {
-                    stateposition=position;
-                    getData(tools.URL+"/research_results/get_result");
-                }
-                else if(position==4)
-                {
-                    stateposition=position;
-                    getData(tools.URL+"/research_results/get_result");
-                }
-
+                stateposition=position;
+                getData(tools.URL+"/research_results/get_result");
             }
 
             @Override
@@ -242,7 +212,6 @@ public class Research_result extends AppCompatActivity {
         research_license.clear();
         research_announcement.clear();
         research_production.clear();
-        research_alllist.clear();
 
         if(language.equals("ko")) {
             try {
@@ -260,94 +229,83 @@ public class Research_result extends AppCompatActivity {
                     result_license = new HashMap<String, String>();
                     result_announcement = new HashMap<String, String>();
                     result_production = new HashMap<String, String>();
-                    result_all = new HashMap<String, String>();
 
-                    if (stateposition == 0) {
-                        result_all.put(TAG_RRID, rrid);
-                        result_all.put(TAG_CLASSIFICATION_KO, classification);
-                        result_all.put(TAG_RESULT_NAME_KO, result_name);
-                        result_all.put(TAG_ACADEMIC_JOURNAL_KO, academic_journal);
-                        result_all.put(TAG_WRITERS_KO, writers);
-                        result_all.put(TAG_P_DATE, date);
-
-                        research_alllist.add(result_all);
-                    }
                     //배열을 따로 만들어서 포지션에 따라 맞는 배열에 삽입  조건 (기간이 지났냐 안지났냐)
 
-                    if (classification.equals("논문")) {
-                        result_thesis.put(TAG_RRID, rrid);
-                        result_thesis.put(TAG_CLASSIFICATION_KO, classification);
-                        result_thesis.put(TAG_RESULT_NAME_KO, result_name);
-                        result_thesis.put(TAG_ACADEMIC_JOURNAL_KO, academic_journal);
-                        result_thesis.put(TAG_WRITERS_KO, writers);
-                        result_thesis.put(TAG_P_DATE, date);
+                    switch (classification) {
+                        case "논문":
+                            result_thesis.put(TAG_RRID, rrid);
+                            result_thesis.put(TAG_CLASSIFICATION_KO, classification);
+                            result_thesis.put(TAG_RESULT_NAME_KO, result_name);
+                            result_thesis.put(TAG_ACADEMIC_JOURNAL_KO, academic_journal);
+                            result_thesis.put(TAG_WRITERS_KO, writers);
+                            result_thesis.put(TAG_P_DATE, date);
 
-                        research_thesis.add(result_thesis);
-                    }
-                    else if(classification.equals("특허")) {
-                        result_license.put(TAG_RRID, rrid);
-                        result_license.put(TAG_CLASSIFICATION_KO, classification);
-                        result_license.put(TAG_RESULT_NAME_KO, result_name);
-                        result_license.put(TAG_ACADEMIC_JOURNAL_KO, academic_journal);
-                        result_license.put(TAG_WRITERS_KO, writers);
-                        result_license.put(TAG_P_DATE, date);
+                            research_thesis.add(result_thesis);
+                            break;
+                        case "특허":
+                            result_license.put(TAG_RRID, rrid);
+                            result_license.put(TAG_CLASSIFICATION_KO, classification);
+                            result_license.put(TAG_RESULT_NAME_KO, result_name);
+                            result_license.put(TAG_ACADEMIC_JOURNAL_KO, academic_journal);
+                            result_license.put(TAG_WRITERS_KO, writers);
+                            result_license.put(TAG_P_DATE, date);
 
-                        research_license.add(result_license);
-                    }
-                    else if(classification.equals("발표"))
-                    {
-                        result_announcement.put(TAG_RRID, rrid);
-                        result_announcement.put(TAG_CLASSIFICATION_KO, classification);
-                        result_announcement.put(TAG_RESULT_NAME_KO, result_name);
-                        result_announcement.put(TAG_ACADEMIC_JOURNAL_KO, academic_journal);
-                        result_announcement.put(TAG_WRITERS_KO, writers);
-                        result_announcement.put(TAG_P_DATE, date);
+                            research_license.add(result_license);
+                            break;
+                        case "발표":
+                            result_announcement.put(TAG_RRID, rrid);
+                            result_announcement.put(TAG_CLASSIFICATION_KO, classification);
+                            result_announcement.put(TAG_RESULT_NAME_KO, result_name);
+                            result_announcement.put(TAG_ACADEMIC_JOURNAL_KO, academic_journal);
+                            result_announcement.put(TAG_WRITERS_KO, writers);
+                            result_announcement.put(TAG_P_DATE, date);
 
-                        research_announcement.add(result_announcement);
-                    }
-                    else if(classification.equals("저서"))
-                    {
-                        result_production.put(TAG_RRID, rrid);
-                        result_production.put(TAG_CLASSIFICATION_KO, classification);
-                        result_production.put(TAG_RESULT_NAME_KO, result_name);
-                        result_production.put(TAG_ACADEMIC_JOURNAL_KO, academic_journal);
-                        result_production.put(TAG_WRITERS_KO, writers);
-                        result_production.put(TAG_P_DATE, date);
+                            research_announcement.add(result_announcement);
+                            break;
+                        case "저서":
+                            result_production.put(TAG_RRID, rrid);
+                            result_production.put(TAG_CLASSIFICATION_KO, classification);
+                            result_production.put(TAG_RESULT_NAME_KO, result_name);
+                            result_production.put(TAG_ACADEMIC_JOURNAL_KO, academic_journal);
+                            result_production.put(TAG_WRITERS_KO, writers);
+                            result_production.put(TAG_P_DATE, date);
 
-                        research_production.add(result_production);
+                            research_production.add(result_production);
+                            break;
                     }
                 }
 
                 //이곳은 포지션 0 1 에따라서 달라지게 만들면 깰끔.
-                if (stateposition == 0) {
-                    ListAdapter adapter = new SimpleAdapter(Research_result.this, research_alllist, R.layout.custom_researchresult,
-                            new String[]{TAG_RESULT_NAME_KO, TAG_ACADEMIC_JOURNAL_KO, TAG_CLASSIFICATION_KO, TAG_WRITERS_KO, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal,R.id.classification, R.id.writers, R.id.date});
-                    listView.setAdapter(adapter);
-                    Toast.makeText(getApplicationContext(), "전체과제", Toast.LENGTH_SHORT).show();
-                } else if (stateposition == 1) {
-                    ListAdapter adapter = new SimpleAdapter(Research_result.this, research_thesis, R.layout.custom_researchresult,
-                            new String[]{TAG_RESULT_NAME_KO, TAG_ACADEMIC_JOURNAL_KO, TAG_CLASSIFICATION_KO, TAG_WRITERS_KO, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal,R.id.classification, R.id.writers, R.id.date});
-                    listView.setAdapter(adapter);
-                    Toast.makeText(getApplicationContext(), "논문", Toast.LENGTH_SHORT).show();
-                } else if (stateposition == 2) {
-                    ListAdapter adapter = new SimpleAdapter(Research_result.this, research_license, R.layout.custom_researchresult,
-                            new String[]{TAG_RESULT_NAME_KO, TAG_ACADEMIC_JOURNAL_KO, TAG_CLASSIFICATION_KO, TAG_WRITERS_KO, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal,R.id.classification, R.id.writers, R.id.date});
-                    listView.setAdapter(adapter);
-                    Toast.makeText(getApplicationContext(), "특허", Toast.LENGTH_SHORT).show();
-                }
-                else if(stateposition==3)
-                {
-                    ListAdapter adapter = new SimpleAdapter(Research_result.this, research_announcement, R.layout.custom_researchresult,
-                            new String[]{TAG_RESULT_NAME_KO, TAG_ACADEMIC_JOURNAL_KO, TAG_CLASSIFICATION_KO, TAG_WRITERS_KO, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal,R.id.classification, R.id.writers, R.id.date});
-                    listView.setAdapter(adapter);
-                    Toast.makeText(getApplicationContext(), "발표", Toast.LENGTH_SHORT).show();
-                }
-                else if(stateposition==4)
-                {
-                    ListAdapter adapter = new SimpleAdapter(Research_result.this, research_production, R.layout.custom_researchresult,
-                            new String[]{TAG_RESULT_NAME_KO, TAG_ACADEMIC_JOURNAL_KO, TAG_CLASSIFICATION_KO, TAG_WRITERS_KO, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal,R.id.classification, R.id.writers, R.id.date});
-                    listView.setAdapter(adapter);
-                    Toast.makeText(getApplicationContext(), "저서", Toast.LENGTH_SHORT).show();
+                switch (stateposition) {
+                    case 0: {
+                        ListAdapter adapter = new SimpleAdapter(Research_result.this, research_thesis, R.layout.custom_researchresult,
+                                new String[]{TAG_RESULT_NAME_KO, TAG_ACADEMIC_JOURNAL_KO, TAG_CLASSIFICATION_KO, TAG_WRITERS_KO, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal, R.id.classification, R.id.writers, R.id.date});
+                        listView.setAdapter(adapter);
+                        Toast.makeText(getApplicationContext(), "논문", Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                    case 1: {
+                        ListAdapter adapter = new SimpleAdapter(Research_result.this, research_license, R.layout.custom_researchresult,
+                                new String[]{TAG_RESULT_NAME_KO, TAG_ACADEMIC_JOURNAL_KO, TAG_CLASSIFICATION_KO, TAG_WRITERS_KO, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal, R.id.classification, R.id.writers, R.id.date});
+                        listView.setAdapter(adapter);
+                        Toast.makeText(getApplicationContext(), "특허", Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                    case 2: {
+                        ListAdapter adapter = new SimpleAdapter(Research_result.this, research_announcement, R.layout.custom_researchresult,
+                                new String[]{TAG_RESULT_NAME_KO, TAG_ACADEMIC_JOURNAL_KO, TAG_CLASSIFICATION_KO, TAG_WRITERS_KO, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal, R.id.classification, R.id.writers, R.id.date});
+                        listView.setAdapter(adapter);
+                        Toast.makeText(getApplicationContext(), "발표", Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                    case 3: {
+                        ListAdapter adapter = new SimpleAdapter(Research_result.this, research_production, R.layout.custom_researchresult,
+                                new String[]{TAG_RESULT_NAME_KO, TAG_ACADEMIC_JOURNAL_KO, TAG_CLASSIFICATION_KO, TAG_WRITERS_KO, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal, R.id.classification, R.id.writers, R.id.date});
+                        listView.setAdapter(adapter);
+                        Toast.makeText(getApplicationContext(), "저서", Toast.LENGTH_SHORT).show();
+                        break;
+                    }
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -370,94 +328,83 @@ public class Research_result extends AppCompatActivity {
                     result_license = new HashMap<String, String>();
                     result_announcement = new HashMap<String, String>();
                     result_production = new HashMap<String, String>();
-                    result_all = new HashMap<String, String>();
 
-                    if (stateposition == 0) {
-                        result_all.put(TAG_RRID, rrid);
-                        result_all.put(TAG_CLASSIFICATION_EN, classification);
-                        result_all.put(TAG_RESULT_NAME_EN, result_name);
-                        result_all.put(TAG_ACADEMIC_JOURNAL_EN, academic_journal);
-                        result_all.put(TAG_WRITERS_EN, writers);
-                        result_all.put(TAG_P_DATE, date);
-
-                        research_alllist.add(result_all);
-                    }
                     //배열을 따로 만들어서 포지션에 따라 맞는 배열에 삽입  조건 (기간이 지났냐 안지났냐)
 
-                    if (classification.equals("Thesis")) {
-                        result_thesis.put(TAG_RRID, rrid);
-                        result_thesis.put(TAG_CLASSIFICATION_EN, classification);
-                        result_thesis.put(TAG_RESULT_NAME_EN, result_name);
-                        result_thesis.put(TAG_ACADEMIC_JOURNAL_EN, academic_journal);
-                        result_thesis.put(TAG_WRITERS_EN, writers);
-                        result_thesis.put(TAG_P_DATE, date);
+                    switch (classification) {
+                        case "Thesis":
+                            result_thesis.put(TAG_RRID, rrid);
+                            result_thesis.put(TAG_CLASSIFICATION_EN, classification);
+                            result_thesis.put(TAG_RESULT_NAME_EN, result_name);
+                            result_thesis.put(TAG_ACADEMIC_JOURNAL_EN, academic_journal);
+                            result_thesis.put(TAG_WRITERS_EN, writers);
+                            result_thesis.put(TAG_P_DATE, date);
 
-                        research_thesis.add(result_thesis);
-                    }
-                    else if(classification.equals("Patent")) {
-                        result_license.put(TAG_RRID, rrid);
-                        result_license.put(TAG_CLASSIFICATION_EN, classification);
-                        result_license.put(TAG_RESULT_NAME_EN, result_name);
-                        result_license.put(TAG_ACADEMIC_JOURNAL_EN, academic_journal);
-                        result_license.put(TAG_WRITERS_EN, writers);
-                        result_license.put(TAG_P_DATE, date);
+                            research_thesis.add(result_thesis);
+                            break;
+                        case "Patent":
+                            result_license.put(TAG_RRID, rrid);
+                            result_license.put(TAG_CLASSIFICATION_EN, classification);
+                            result_license.put(TAG_RESULT_NAME_EN, result_name);
+                            result_license.put(TAG_ACADEMIC_JOURNAL_EN, academic_journal);
+                            result_license.put(TAG_WRITERS_EN, writers);
+                            result_license.put(TAG_P_DATE, date);
 
-                        research_license.add(result_license);
-                    }
-                    else if(classification.equals("Presentation"))
-                    {
-                        result_announcement.put(TAG_RRID, rrid);
-                        result_announcement.put(TAG_CLASSIFICATION_EN, classification);
-                        result_announcement.put(TAG_RESULT_NAME_EN, result_name);
-                        result_announcement.put(TAG_ACADEMIC_JOURNAL_EN, academic_journal);
-                        result_announcement.put(TAG_WRITERS_EN, writers);
-                        result_announcement.put(TAG_P_DATE, date);
+                            research_license.add(result_license);
+                            break;
+                        case "Presentation":
+                            result_announcement.put(TAG_RRID, rrid);
+                            result_announcement.put(TAG_CLASSIFICATION_EN, classification);
+                            result_announcement.put(TAG_RESULT_NAME_EN, result_name);
+                            result_announcement.put(TAG_ACADEMIC_JOURNAL_EN, academic_journal);
+                            result_announcement.put(TAG_WRITERS_EN, writers);
+                            result_announcement.put(TAG_P_DATE, date);
 
-                        research_announcement.add(result_announcement);
-                    }
-                    else if(classification.equals("Production"))
-                    {
-                        result_production.put(TAG_RRID, rrid);
-                        result_production.put(TAG_CLASSIFICATION_EN, classification);
-                        result_production.put(TAG_RESULT_NAME_EN, result_name);
-                        result_production.put(TAG_ACADEMIC_JOURNAL_EN, academic_journal);
-                        result_production.put(TAG_WRITERS_EN, writers);
-                        result_production.put(TAG_P_DATE, date);
+                            research_announcement.add(result_announcement);
+                            break;
+                        case "Production":
+                            result_production.put(TAG_RRID, rrid);
+                            result_production.put(TAG_CLASSIFICATION_EN, classification);
+                            result_production.put(TAG_RESULT_NAME_EN, result_name);
+                            result_production.put(TAG_ACADEMIC_JOURNAL_EN, academic_journal);
+                            result_production.put(TAG_WRITERS_EN, writers);
+                            result_production.put(TAG_P_DATE, date);
 
-                        research_production.add(result_production);
+                            research_production.add(result_production);
+                            break;
                     }
                 }
 
                 //이곳은 포지션 0 1 에따라서 달라지게 만들면 깰끔.
-                if (stateposition == 0) {
-                    ListAdapter adapter = new SimpleAdapter(Research_result.this, research_alllist, R.layout.custom_researchresult,
-                            new String[]{TAG_RESULT_NAME_EN, TAG_ACADEMIC_JOURNAL_EN, TAG_CLASSIFICATION_EN, TAG_WRITERS_EN, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal,R.id.classification, R.id.writers, R.id.date});
-                    listView.setAdapter(adapter);
-                    Toast.makeText(getApplicationContext(), "View All", Toast.LENGTH_SHORT).show();
-                } else if (stateposition == 1) {
-                    ListAdapter adapter = new SimpleAdapter(Research_result.this, research_thesis, R.layout.custom_researchresult,
-                            new String[]{TAG_RESULT_NAME_EN, TAG_ACADEMIC_JOURNAL_EN, TAG_CLASSIFICATION_EN, TAG_WRITERS_EN, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal,R.id.classification, R.id.writers, R.id.date});
-                    listView.setAdapter(adapter);
-                    Toast.makeText(getApplicationContext(), "Thesis", Toast.LENGTH_SHORT).show();
-                } else if (stateposition == 2) {
-                    ListAdapter adapter = new SimpleAdapter(Research_result.this, research_license, R.layout.custom_researchresult,
-                            new String[]{TAG_RESULT_NAME_EN, TAG_ACADEMIC_JOURNAL_EN, TAG_CLASSIFICATION_EN, TAG_WRITERS_EN, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal,R.id.classification, R.id.writers, R.id.date});
-                    listView.setAdapter(adapter);
-                    Toast.makeText(getApplicationContext(), "Patent", Toast.LENGTH_SHORT).show();
-                }
-                else if(stateposition==3)
-                {
-                    ListAdapter adapter = new SimpleAdapter(Research_result.this, research_announcement, R.layout.custom_researchresult,
-                            new String[]{TAG_RESULT_NAME_EN, TAG_ACADEMIC_JOURNAL_EN, TAG_CLASSIFICATION_EN, TAG_WRITERS_EN, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal,R.id.classification, R.id.writers, R.id.date});
-                    listView.setAdapter(adapter);
-                    Toast.makeText(getApplicationContext(), "Announcement", Toast.LENGTH_SHORT).show();
-                }
-                else if(stateposition==4)
-                {
-                    ListAdapter adapter = new SimpleAdapter(Research_result.this, research_production, R.layout.custom_researchresult,
-                            new String[]{TAG_RESULT_NAME_EN, TAG_ACADEMIC_JOURNAL_EN, TAG_CLASSIFICATION_EN, TAG_WRITERS_EN, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal,R.id.classification, R.id.writers, R.id.date});
-                    listView.setAdapter(adapter);
-                    Toast.makeText(getApplicationContext(), "Production", Toast.LENGTH_SHORT).show();
+                switch (stateposition) {
+                    case 0: {
+                        ListAdapter adapter = new SimpleAdapter(Research_result.this, research_thesis, R.layout.custom_researchresult,
+                                new String[]{TAG_RESULT_NAME_EN, TAG_ACADEMIC_JOURNAL_EN, TAG_CLASSIFICATION_EN, TAG_WRITERS_EN, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal, R.id.classification, R.id.writers, R.id.date});
+                        listView.setAdapter(adapter);
+                        Toast.makeText(getApplicationContext(), "Thesis", Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                    case 1: {
+                        ListAdapter adapter = new SimpleAdapter(Research_result.this, research_license, R.layout.custom_researchresult,
+                                new String[]{TAG_RESULT_NAME_EN, TAG_ACADEMIC_JOURNAL_EN, TAG_CLASSIFICATION_EN, TAG_WRITERS_EN, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal, R.id.classification, R.id.writers, R.id.date});
+                        listView.setAdapter(adapter);
+                        Toast.makeText(getApplicationContext(), "Patent", Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                    case 2: {
+                        ListAdapter adapter = new SimpleAdapter(Research_result.this, research_announcement, R.layout.custom_researchresult,
+                                new String[]{TAG_RESULT_NAME_EN, TAG_ACADEMIC_JOURNAL_EN, TAG_CLASSIFICATION_EN, TAG_WRITERS_EN, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal, R.id.classification, R.id.writers, R.id.date});
+                        listView.setAdapter(adapter);
+                        Toast.makeText(getApplicationContext(), "Announcement", Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                    case 3: {
+                        ListAdapter adapter = new SimpleAdapter(Research_result.this, research_production, R.layout.custom_researchresult,
+                                new String[]{TAG_RESULT_NAME_EN, TAG_ACADEMIC_JOURNAL_EN, TAG_CLASSIFICATION_EN, TAG_WRITERS_EN, TAG_P_DATE}, new int[]{R.id.result_name, R.id.academic_journal, R.id.classification, R.id.writers, R.id.date});
+                        listView.setAdapter(adapter);
+                        Toast.makeText(getApplicationContext(), "Production", Toast.LENGTH_SHORT).show();
+                        break;
+                    }
                 }
             } catch (JSONException e) {
                 e.printStackTrace();

@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     String laguage = tools.language;
     public static Context CONTEXT;
     TextView username;
-    Button loginbtn,location,pcbtn,result,research_btn,logoutbtn, data_btn;
+    Button loginbtn,location,pcbtn,active,archive,logoutbtn, data_btn;
     ImageButton introduce_icon, member_icon, question_icon, research_icon;
 
     @Override
@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         logoutbtn = (Button)findViewById(R.id.logoutbtn);
         location = (Button)findViewById(R.id.location);
         pcbtn = (Button)findViewById(R.id.pcbtn);
-        research_btn = (Button)findViewById(R.id.research_btn);
-        result = (Button)findViewById(R.id.result);
+        archive = (Button)findViewById(R.id.archive);
+        active = (Button)findViewById(R.id.active);
         data_btn = (Button)findViewById(R.id.data_btn);
         introduce_icon = (ImageButton)findViewById(R.id.introduce_icon);
         member_icon = (ImageButton)findViewById(R.id.member_icon);
@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         member_icon.setOnClickListener(this);
         research_icon.setOnClickListener(this);
         question_icon.setOnClickListener(this);
-        result.setOnClickListener(this);
-        research_btn.setOnClickListener(this);
+        active.setOnClickListener(this);
+        archive.setOnClickListener(this);
         location.setOnClickListener(this);
         data_btn.setOnClickListener(this);
         loginbtn.setOnClickListener(this);
@@ -110,14 +110,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(question);
                 break;
 
-            case R.id.result:
-                Intent result = new Intent(MainActivity.this,Research_result.class);
+            case R.id.active:
+                Intent result = new Intent(MainActivity.this,ResearchActive.class);
                 startActivity(result);
                 break;
 
-            case R.id.research_btn:
-                Intent research = new Intent(MainActivity.this,ResearchField.class);
-                startActivity(research);
+            case R.id.archive:
+                //Intent research = new Intent(MainActivity.this,ResearchField.class); //추후 수정
+                //startActivity(research);
                 break;
 
             case R.id.location:
@@ -192,12 +192,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.member_tools) {
             Intent member = new Intent(MainActivity.this,Member.class);
             startActivity(member);
-        } else if (id == R.id.fields_tools) {
-            Intent research_fields = new Intent(MainActivity.this,ResearchField.class);
+        } else if (id == R.id.active_tools) {
+            Intent research_fields = new Intent(MainActivity.this,ResearchActive.class);
             startActivity(research_fields);
-        } else if (id == R.id.result_tools) {
-            Intent research_result = new Intent(MainActivity.this,Research_result.class);
-            startActivity(research_result);
+        } else if (id == R.id.archive_tools) {
+            /*Intent research_result = new Intent(MainActivity.this,Research_result.class);
+            startActivity(research_result);*/
         } else if (id == R.id.question_tools) {
             Intent question = new Intent(MainActivity.this,Question.class);
             startActivity(question);
@@ -243,7 +243,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             logoutbtn.setVisibility(View.GONE);
             if(laguage.equals("ko"))
             {
-                username.setText("손님 환영합니다.");
+                username.setText("방문자님 환영합니다.");
             }
             else
             {

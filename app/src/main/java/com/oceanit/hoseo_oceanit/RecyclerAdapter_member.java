@@ -63,7 +63,7 @@ public class RecyclerAdapter_member extends RecyclerView.Adapter<RecyclerAdapter
                         if (language.equals("ko")) {
                             intent.putExtra("member_image2", "@drawable/gohaklim");
                             intent.putExtra("name", "고학림");
-                            intent.putExtra("position", "해양IT융합기술연구소");
+                            intent.putExtra("position", "정보통신공학부");
                             intent.putExtra("call", "041-540-5691");
                             intent.putExtra("email", "hlko@hoseo.edu");
                             intent.putExtra("bachelor_school", "숭실대학교");
@@ -78,7 +78,7 @@ public class RecyclerAdapter_member extends RecyclerView.Adapter<RecyclerAdapter
                         } else {
                             intent.putExtra("member_image2", "@drawable/gohaklim");
                             intent.putExtra("name", "Hak Rim GO");
-                            intent.putExtra("position", "Ocean IT");
+                            intent.putExtra("position", "ICT Engineering");
                             intent.putExtra("call", "041-540-5691");
                             intent.putExtra("email", "hlko@hoseo.edu");
                             intent.putExtra("bachelor_school", "Soongsil Univ.");
@@ -102,30 +102,30 @@ public class RecyclerAdapter_member extends RecyclerView.Adapter<RecyclerAdapter
                         if (language.equals("ko")) {
                             intent.putExtra("member_image2", "@drawable/limteaho");
                             intent.putExtra("name", "임태호");
-                            intent.putExtra("position", "해양IT융합기술연구소");
+                            intent.putExtra("position", "정보통신공학부");
                             intent.putExtra("call", "041-540-9640");
                             intent.putExtra("email", "taehoim@hoseo.edu");
-                            intent.putExtra("bachelor_school", "");
-                            intent.putExtra("bachelor_major", "");
-                            intent.putExtra("bachelor_degree", "");
-                            intent.putExtra("master_school", "");
-                            intent.putExtra("master_major", "");
-                            intent.putExtra("master_degree", "");
+                            intent.putExtra("bachelor_school", "중앙대학교");
+                            intent.putExtra("bachelor_major", "전자전기공학전공");
+                            intent.putExtra("bachelor_degree", "공학사");
+                            intent.putExtra("master_school", "중앙대학교");
+                            intent.putExtra("master_major", "디지털통신전공");
+                            intent.putExtra("master_degree", "공학석사");
                             intent.putExtra("doctor_school", "중앙대학교");
-                            intent.putExtra("doctor_major", "정보통신");
-                            intent.putExtra("doctor_degree", "박사");
+                            intent.putExtra("doctor_major", "정보통신공학과");
+                            intent.putExtra("doctor_degree", "공학박사");
                         } else {
                             intent.putExtra("member_image2", "@drawable/limteaho");
                             intent.putExtra("name", "Tae Ho Im");
-                            intent.putExtra("position", "Ocean IT");
+                            intent.putExtra("position", "ICT Engineering");
                             intent.putExtra("call", "041-540-9640");
                             intent.putExtra("email", "taehoim@hoseo.edu");
-                            intent.putExtra("bachelor_school", "");
-                            intent.putExtra("bachelor_major", "");
-                            intent.putExtra("bachelor_degree", "");
-                            intent.putExtra("master_school", "");
-                            intent.putExtra("master_major", "");
-                            intent.putExtra("master_degree", "");
+                            intent.putExtra("bachelor_school", "Chung-ang Univ.");
+                            intent.putExtra("bachelor_major", "Electronic and Electrical Engineering");
+                            intent.putExtra("bachelor_degree", "Bachelor");
+                            intent.putExtra("master_school", "Chung-ang Univ.");
+                            intent.putExtra("master_major", "Digital Communication");
+                            intent.putExtra("master_degree", "Master");
                             intent.putExtra("doctor_school", "Chung-ang Univ.");
                             intent.putExtra("doctor_major", "Information and communication");
                             intent.putExtra("doctor_degree", "Doctor");
@@ -141,30 +141,30 @@ public class RecyclerAdapter_member extends RecyclerView.Adapter<RecyclerAdapter
                         if (language.equals("ko")) {
                             intent.putExtra("member_image2", "@drawable/choyongho");
                             intent.putExtra("name", "조용호");
-                            intent.putExtra("position", "해양IT융합기술연구소");
+                            intent.putExtra("position", "정보통신공학부");
                             intent.putExtra("call", "041-540-5947");
                             intent.putExtra("email", "ykcho@hoseo.edu");
-                            intent.putExtra("bachelor_school", "");
-                            intent.putExtra("bachelor_major", "");
-                            intent.putExtra("bachelor_degree", "");
-                            intent.putExtra("master_school", "");
-                            intent.putExtra("master_major", "");
-                            intent.putExtra("master_degree", "");
+                            intent.putExtra("bachelor_school", "한국과학기술원");
+                            intent.putExtra("bachelor_major", "전기및전자공학");
+                            intent.putExtra("bachelor_degree", "공학사");
+                            intent.putExtra("master_school", "한국과학기술원");
+                            intent.putExtra("master_major", "전기및전자공학");
+                            intent.putExtra("master_degree", "공학석사");
                             intent.putExtra("doctor_school", "한국과학기술원");
                             intent.putExtra("doctor_major", "전기및전자공학");
-                            intent.putExtra("doctor_degree", "박사");
+                            intent.putExtra("doctor_degree", "공학박사");
                         } else {
                             intent.putExtra("member_image2", "@drawable/choyongho");
                             intent.putExtra("name", "Yong Ho Cho");
-                            intent.putExtra("position", "Ocean IT");
+                            intent.putExtra("position", "ICT Engineering");
                             intent.putExtra("call", "041-540-5947");
                             intent.putExtra("email", "ykcho@hoseo.edu");
-                            intent.putExtra("bachelor_school", "");
-                            intent.putExtra("bachelor_major", "");
-                            intent.putExtra("bachelor_degree", "");
-                            intent.putExtra("master_school", "");
-                            intent.putExtra("master_major", "");
-                            intent.putExtra("master_degree", "");
+                            intent.putExtra("bachelor_school", "KAIST");
+                            intent.putExtra("bachelor_major", "Electrical and electronic engineering");
+                            intent.putExtra("bachelor_degree", "Bachelor");
+                            intent.putExtra("master_school", "KAIST");
+                            intent.putExtra("master_major", "Electrical and electronic engineering");
+                            intent.putExtra("master_degree", "Master");
                             intent.putExtra("doctor_school", "KAIST");
                             intent.putExtra("doctor_major", "Electrical and electronic engineering");
                             intent.putExtra("doctor_degree", "Doctor");
@@ -180,7 +180,7 @@ public class RecyclerAdapter_member extends RecyclerView.Adapter<RecyclerAdapter
                         if (language.equals("ko")) {
                             intent.putExtra("member_image2", "@drawable/kimgyewon");
                             intent.putExtra("name", "김계원");
-                            intent.putExtra("position", "해양IT융합기술연구소");
+                            intent.putExtra("position", "정보통신공학부");
                             intent.putExtra("call", "041-540-9831");
                             intent.putExtra("email", "kwkim@hoseo.edu");
                             intent.putExtra("bachelor_school", "호서대학교");
@@ -195,7 +195,7 @@ public class RecyclerAdapter_member extends RecyclerView.Adapter<RecyclerAdapter
                         } else {
                             intent.putExtra("member_image2", "@drawable/kimgyewon");
                             intent.putExtra("name", "Gye Won Kim");
-                            intent.putExtra("position", "Ocean IT");
+                            intent.putExtra("position", "ICT Engineering");
                             intent.putExtra("call", "041-540-9831");
                             intent.putExtra("email", "kwkim@hoseo.edu");
                             intent.putExtra("bachelor_school", "Hoseo Univ.");
@@ -206,6 +206,45 @@ public class RecyclerAdapter_member extends RecyclerView.Adapter<RecyclerAdapter
                             intent.putExtra("master_degree", "Master");
                             intent.putExtra("doctor_school", "Hoseo Univ.");
                             intent.putExtra("doctor_major", "Information and communication engineering");
+                            intent.putExtra("doctor_degree", "Doctor");
+                        }
+                        context.startActivity(intent);
+                        break;
+
+                    case "박래호":
+                    case "Rae Ho Park":
+                        e("log", "error_in");
+                        intent = new Intent(context, Member_info.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        if (language.equals("ko")) {
+                            intent.putExtra("member_image2", "@drawable/noimg");
+                            intent.putExtra("name", "박래호");
+                            intent.putExtra("position", "해양IT융합기술연구소");
+                            intent.putExtra("call", "041-540-5945");
+                            intent.putExtra("email", "kamrosoo4900@daum.net");
+                            intent.putExtra("bachelor_school", "육군사관학교");
+                            intent.putExtra("bachelor_major", "전사학과");
+                            intent.putExtra("bachelor_degree", "학사");
+                            intent.putExtra("master_school", "동국대학교");
+                            intent.putExtra("master_major", "외교국방국");
+                            intent.putExtra("master_degree", "석사");
+                            intent.putExtra("doctor_school", "아주대학교");
+                            intent.putExtra("doctor_major", "정보통신학");
+                            intent.putExtra("doctor_degree", "석사");
+                        } else {
+                            intent.putExtra("member_image2", "@drawable/noimg");
+                            intent.putExtra("name", "Rae Ho Park");
+                            intent.putExtra("position", "Ocean IT");
+                            intent.putExtra("call", "041-540-5945");
+                            intent.putExtra("email", "kamrosoo4900@daum.net");
+                            intent.putExtra("bachelor_school", "Military Academy");
+                            intent.putExtra("bachelor_major", "Warrior's Department");
+                            intent.putExtra("bachelor_degree", "Bachelor");
+                            intent.putExtra("master_school", "Dongguk Univ.");
+                            intent.putExtra("master_major", "The Ministry of Foreign Affairs and Defense");
+                            intent.putExtra("master_degree", "Master");
+                            intent.putExtra("doctor_school", "Ajou Univ.");
+                            intent.putExtra("doctor_major", "Information and Communication Sciences");
                             intent.putExtra("doctor_degree", "Doctor");
                         }
                         context.startActivity(intent);
@@ -288,44 +327,7 @@ public class RecyclerAdapter_member extends RecyclerView.Adapter<RecyclerAdapter
                         }
                         context.startActivity(intent);
                         break;
-                    case "김세연":
-                    case "Se Yeon Kim":
-                        e("log", "error_in");
-                        intent = new Intent(context, Member_info.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        if (language.equals("ko")) {
-                            intent.putExtra("member_image2", "@drawable/kimsaeyun");
-                            intent.putExtra("name", "김세연");
-                            intent.putExtra("position", "해양IT융합기술연구소");
-                            intent.putExtra("call", "041-540-9565");
-                            intent.putExtra("email", "seyeon92@hoseo.edu");
-                            intent.putExtra("bachelor_school", "호서대학교");
-                            intent.putExtra("bachelor_major", "정보통신공학");
-                            intent.putExtra("bachelor_degree", "학사");
-                            intent.putExtra("master_school", "");
-                            intent.putExtra("master_major", "");
-                            intent.putExtra("master_degree", "");
-                            intent.putExtra("doctor_school", "");
-                            intent.putExtra("doctor_major", "");
-                            intent.putExtra("doctor_degree", "");
-                        } else {
-                            intent.putExtra("member_image2", "@drawable/kimsaeyun");
-                            intent.putExtra("name", "Se Yeon Kim");
-                            intent.putExtra("position", "Ocean IT");
-                            intent.putExtra("call", "041-540-9565");
-                            intent.putExtra("email", "seyeon92@hoseo.edu");
-                            intent.putExtra("bachelor_school", "Hoseo Univ.");
-                            intent.putExtra("bachelor_major", "Information and communication engineering");
-                            intent.putExtra("bachelor_degree", "Bachelor");
-                            intent.putExtra("master_school", "");
-                            intent.putExtra("master_major", "");
-                            intent.putExtra("master_degree", "");
-                            intent.putExtra("doctor_school", "");
-                            intent.putExtra("doctor_major", "");
-                            intent.putExtra("doctor_degree", "");
-                        }
-                        context.startActivity(intent);
-                        break;
+
                     case "난디만달람모함":
                     case "Mohan Krishna Varma Nandimandalam":
                         e("log", "error_in");
@@ -399,6 +401,90 @@ public class RecyclerAdapter_member extends RecyclerView.Adapter<RecyclerAdapter
                             intent.putExtra("doctor_school", "Hoseo Univ.");
                             intent.putExtra("doctor_major", "Information and communication engineering");
                             intent.putExtra("doctor_degree", "Doctor");
+                        }
+                        context.startActivity(intent);
+                        break;
+
+                    case "칸 티 투 투이":
+                    case "Can Thi Thu Thuy":
+                        e("log", "error_in");
+                        intent = new Intent(context, Member_info.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        if (language.equals("ko")) {
+                            intent.putExtra("member_image2", "@drawable/canthithuthuy");
+                            intent.putExtra("name", "칸 티 투 투이");
+                            intent.putExtra("position", "해양IT융합기술연구소");
+                            intent.putExtra("call", "041-540-9565");
+                            intent.putExtra("email", "kangchiwa@gmail.com");
+                            intent.putExtra("bachelor_school", "국립하노이대학교");
+                            intent.putExtra("bachelor_major", "물리 교사 교육");
+                            intent.putExtra("bachelor_degree", "학사");
+                            intent.putExtra("master_school", "국립하노이대학교");
+                            intent.putExtra("master_major", "이론 물리 및 수학 물리");
+                            intent.putExtra("master_degree", "석사");
+                            intent.putExtra("doctor_school", "이화여자대학교");
+                            intent.putExtra("doctor_major", "응축 물질 물리학");
+                            intent.putExtra("doctor_degree", "박사");
+                            intent.putExtra("doctor_school2", "호서대학교");
+                            intent.putExtra("doctor_major2", "디스플레이 엔지니어링");
+                            intent.putExtra("doctor_degree2", "박사");
+                        } else {
+                            intent.putExtra("member_image2", "@drawable/canthithuthuy");
+                            intent.putExtra("name", "Can Thi Thu Thuy");
+                            intent.putExtra("position", "Ocean IT");
+                            intent.putExtra("call", "041-540-9565");
+                            intent.putExtra("email", "kangchiwa@gmail.com");
+                            intent.putExtra("bachelor_school", "VNU-UNIVERSITY of Education");
+                            intent.putExtra("bachelor_major", "Teacher Education in Physics");
+                            intent.putExtra("bachelor_degree", "Bachelor");
+                            intent.putExtra("master_school", "VNU-UNIVERSITY of Science");
+                            intent.putExtra("master_major", "Theoretical Physics and Mathematical Physics");
+                            intent.putExtra("master_degree", "Master");
+                            intent.putExtra("doctor_school", "Ewha Womans Univ.");
+                            intent.putExtra("doctor_major", "Condensed Matter Physics");
+                            intent.putExtra("doctor_degree", "Doctor");
+                            intent.putExtra("doctor_school2", "Hoseo Univ.");
+                            intent.putExtra("doctor_major2", "Display Engineering");
+                            intent.putExtra("doctor_degree2", "Doctor");
+                        }
+                        context.startActivity(intent);
+                        break;
+
+                    case "김세연":
+                    case "Se Yeon Kim":
+                        e("log", "error_in");
+                        intent = new Intent(context, Member_info.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        if (language.equals("ko")) {
+                            intent.putExtra("member_image2", "@drawable/kimsaeyun");
+                            intent.putExtra("name", "김세연");
+                            intent.putExtra("position", "해양IT융합기술연구소");
+                            intent.putExtra("call", "041-540-9565");
+                            intent.putExtra("email", "seyeon92@hoseo.edu");
+                            intent.putExtra("bachelor_school", "호서대학교");
+                            intent.putExtra("bachelor_major", "정보통신공학");
+                            intent.putExtra("bachelor_degree", "학사");
+                            intent.putExtra("master_school", "");
+                            intent.putExtra("master_major", "");
+                            intent.putExtra("master_degree", "");
+                            intent.putExtra("doctor_school", "");
+                            intent.putExtra("doctor_major", "");
+                            intent.putExtra("doctor_degree", "");
+                        } else {
+                            intent.putExtra("member_image2", "@drawable/kimsaeyun");
+                            intent.putExtra("name", "Se Yeon Kim");
+                            intent.putExtra("position", "Ocean IT");
+                            intent.putExtra("call", "041-540-9565");
+                            intent.putExtra("email", "seyeon92@hoseo.edu");
+                            intent.putExtra("bachelor_school", "Hoseo Univ.");
+                            intent.putExtra("bachelor_major", "Information and communication engineering");
+                            intent.putExtra("bachelor_degree", "Bachelor");
+                            intent.putExtra("master_school", "");
+                            intent.putExtra("master_major", "");
+                            intent.putExtra("master_degree", "");
+                            intent.putExtra("doctor_school", "");
+                            intent.putExtra("doctor_major", "");
+                            intent.putExtra("doctor_degree", "");
                         }
                         context.startActivity(intent);
                         break;

@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">Ocean IT</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -6,10 +7,12 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_privacy">Privacy Policy</string>
 
+    <!-- 메인 드로어 -->
+
     <string name="introduce_tools">Introduce</string>
     <string name="member_tools">Member</string>
-    <string name="fields_tools">Research Fields</string>
-    <string name="result_tools">Research Results</string>
+    <string name="active_tools">Research Actives</string>
+    <string name="archive_tools">Archive</string>
     <string name="question_tools">Question</string>
     <string name="login_tools">Login</string>
     <string name="logout_tools">Logout</string>
@@ -18,6 +21,13 @@
     <string name="pcwed_tools">Ocean IT Web site</string>
     <string name="Ocean_data">Ocean Data. Web</string>
 
+    <!-- 활동 드로어 -->
+
+    <string name="research_project_tools">Research Project</string>
+    <string name="research_performance_tools">Research Performance</string>
+    <string name="research_activities_tools">Research Activities</string>
+    <string name="academic_activities_tools">Academic Activities</string>
+
 
     <!--해양IT 영문화 과정-->
 
@@ -25,11 +35,11 @@
     <string name="welcomoceanit">Ocean IT Research Institute\n Welcome to visit our homepage</string>
     <string name="introduce_text">Introduce</string>
     <string name="member_text">Memeber</string>
-    <string name="research_text">Result</string>
+    <string name="research_text">Active</string>
     <string name="question_text">Question</string>
-    <string name="result">Result</string>
+    <string name="active">Actives</string>
     <string name="location">Location</string>
-    <string name="research_btn">Fields</string>
+    <string name="archive">Archive</string>
     <string name="data_btn">Data wed</string>
     <string name="loginbtn">Login</string>
     <string name="logoutbtn">Logout</string>

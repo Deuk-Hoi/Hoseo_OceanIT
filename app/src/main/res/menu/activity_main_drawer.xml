@@ -14,13 +14,13 @@
             android:icon="@drawable/member_menu"
             android:title="@string/member_tools" />
         <item
-            android:id="@+id/fields_tools"
-            android:icon="@drawable/research_fields"
-            android:title="@string/fields_tools" />
+            android:id="@+id/active_tools"
+            android:icon="@drawable/active_b"
+            android:title="@string/active_tools" />
         <item
-            android:id="@+id/result_tools"
-            android:icon="@drawable/resurch_result"
-            android:title="@string/result_tools" />
+            android:id="@+id/archive_tools"
+            android:icon="@drawable/archive"
+            android:title="@string/archive_tools" />
         <item
             android:id="@+id/question_tools"
             android:icon="@drawable/qna"

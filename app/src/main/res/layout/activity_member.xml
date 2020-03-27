@@ -48,12 +48,96 @@
             android:scrollbars="none"
             android:fillViewport="true">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/member_list"
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            </androidx.recyclerview.widget.RecyclerView>
+                <TextView
+                    android:id="@+id/participatory_professor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="▣ 참여교수"
+                    android:textColor="#5D8DC7"
+                    android:textSize="20dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/professor_list"
+                    android:layout_below="@id/participatory_professor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/research_professor_research_fellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/professor_list"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="▣ 전임연구교수 및 전임연구원"
+                    android:textColor="#5D8DC7"
+                    android:textSize="20dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/professor_fellow_list"
+                    android:layout_below="@id/research_professor_research_fellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/doctor_fellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/professor_fellow_list"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="▣ 박사과정"
+                    android:textColor="#5D8DC7"
+                    android:textSize="20dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/doctor_fellow_list"
+                    android:layout_below="@id/doctor_fellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/master_fellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/doctor_fellow_list"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="▣ 석사과정"
+                    android:textColor="#5D8DC7"
+                    android:textSize="20dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/master_fellow_list"
+                    android:layout_below="@id/master_fellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+
         </ScrollView>
 
     </RelativeLayout>
