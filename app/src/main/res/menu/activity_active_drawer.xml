@@ -13,10 +13,6 @@
             android:icon="@drawable/research_result"
             android:title="@string/research_performance_tools" />
         <item
-            android:id="@+id/research_activities_tools"
-            android:icon="@drawable/active_b"
-            android:title="@string/research_activities_tools" />
-        <item
             android:id="@+id/academic_activities_tools"
             android:icon="@drawable/academic"
             android:title="@string/academic_activities_tools" />

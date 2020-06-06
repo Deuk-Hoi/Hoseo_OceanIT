@@ -28,6 +28,7 @@
                     android:paddingLeft="5dp"
                     android:paddingBottom="7dp"
                     android:text="논문명"
+                    android:textColor="#000000"
                     android:textSize="20dp"/>
                 <TextView
                     android:id="@+id/title_name"
@@ -53,6 +54,7 @@
                     android:paddingRight="5dp"
                     android:paddingLeft="5dp"
                     android:paddingBottom="7dp"
+                    android:textColor="#000000"
                     android:text="구분"
                     android:textSize="20dp"/>
 
@@ -78,6 +80,7 @@
                     android:paddingRight="5dp"
                     android:paddingLeft="5dp"
                     android:paddingBottom="7dp"
+                    android:textColor="#000000"
                     android:text="개제연도"
                     android:textSize="20dp"/>
 
@@ -106,6 +109,7 @@
                     android:paddingRight="5dp"
                     android:paddingLeft="5dp"
                     android:paddingBottom="7dp"
+                    android:textColor="#000000"
                     android:text="개제지"
                     android:textSize="20dp"/>
                 <TextView
@@ -133,6 +137,7 @@
                     android:paddingRight="5dp"
                     android:paddingLeft="5dp"
                     android:paddingBottom="7dp"
+                    android:textColor="#000000"
                     android:text="저자명"
                     android:textSize="20dp"/>
                 <TextView

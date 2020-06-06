@@ -72,7 +72,7 @@
             android:textSize="14dp"
             app:layout_constrainedWidth="true"
             app:layout_constraintTop_toBottomOf="@id/support_organization"
-            app:layout_constraintBaseline_toBaselineOf="@id/classification"
+            app:layout_constraintBaseline_toBaselineOf="@id/date_end"
             app:layout_constraintEnd_toEndOf="@id/custom_researchlist"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

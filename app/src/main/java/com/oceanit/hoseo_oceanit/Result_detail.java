@@ -2,6 +2,8 @@ package com.oceanit.hoseo_oceanit;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -32,6 +34,7 @@ public class Result_detail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE); //가로 모드 활성화
         setContentView(R.layout.activity_result_detail);
 
         Intent result_intent = this.getIntent();

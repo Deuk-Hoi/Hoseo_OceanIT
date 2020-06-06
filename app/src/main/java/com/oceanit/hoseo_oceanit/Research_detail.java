@@ -2,6 +2,8 @@ package com.oceanit.hoseo_oceanit;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -46,8 +48,7 @@ public class Research_detail extends AppCompatActivity {
     private static final String TAG_PROGRESS_EN = "Researching";
     private static final String TAG_FINISH_KO = "연구완료";
     private static final String TAG_FINISH_EN = "Finish";
-    TextView research_nametxt, business_nametxt, departmenttxt, support_organizationtxt, subjectivity_txt, research_chargetxt, organizationstxt, research_charge_belongtxt, datetxt,
-            researchprogresstxt, research_purposetxt, research_contentstxt, research_expectedtxt;
+    TextView research_datetxt, research_supporttxt, research_purposetxt;
     String intent_rid, JSON;
     Tools tools = new Tools();
     String language = tools.language;
@@ -55,36 +56,18 @@ public class Research_detail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_research_detail);
         Intent research_intent = this.getIntent();
         intent_rid = research_intent.getStringExtra("rid");
         JSON =research_intent.getStringExtra("researchJSON");
 
 
-
-        research_nametxt = (TextView)findViewById(R.id.research_nametxt);
-        business_nametxt = (TextView)findViewById(R.id.business_nametxt);
-        departmenttxt = (TextView)findViewById(R.id.departmenttxt);
-        support_organizationtxt = (TextView)findViewById(R.id.support_organizationtxt);
-        subjectivity_txt = (TextView)findViewById(R.id.subjectivity_txt);
-        research_chargetxt = (TextView)findViewById(R.id.research_chargetxt);
-        organizationstxt = (TextView)findViewById(R.id.organizationstxt);
-        research_charge_belongtxt = (TextView)findViewById(R.id.research_charge_belongtxt);
-        datetxt = (TextView)findViewById(R.id.datetxt);
-        researchprogresstxt = (TextView)findViewById(R.id.researchprogresstxt);
+        research_datetxt = (TextView)findViewById(R.id.research_datetxt);
+        research_supporttxt = (TextView)findViewById(R.id.research_supporttxt);
         research_purposetxt = (TextView)findViewById(R.id.research_purposetxt);
-        research_contentstxt = (TextView)findViewById(R.id.research_contentstxt);
-        research_expectedtxt = (TextView)findViewById(R.id.research_expectedtxt);
 
-
-        departmenttxt.setSelected(true);
-        support_organizationtxt.setSelected(true);
-        subjectivity_txt.setSelected(true);
-        research_chargetxt.setSelected(true);
-        organizationstxt.setSelected(true);
-        research_charge_belongtxt.setSelected(true);
-        datetxt.setSelected(true);
-        researchprogresstxt.setSelected(true);
+        research_purposetxt.setSelected(true);
 
         showdetail();
 
@@ -99,43 +82,14 @@ public class Research_detail extends AppCompatActivity {
                     String rid = c.getString(TAG_RID);
                     if(rid.equals(intent_rid)) {
 
-                        String detail_research_name = c.getString(TAG_RESEARCH_NAME_KO);
-                        String detail_business_name = c.getString(TAG_BUSINESS_NAME_KO);
-                        String detail_department_name = c.getString(TAG_DEPARTMENT_NAME_KO);
-                        String detail_subjectivity_organization = c.getString(TAG_SUBJECTIVITY_ORGANIZATION_KO);
-                        String detail_support_organization = c.getString(TAG_SUPPORT_ORGANIZATION_KO);
-                        String detail_participation_organization = c.getString(TAG_PARTICIPATION_ORGANIZATION_KO);
                         String detail_research_purpose = c.getString(TAG_RESEARCH_PURPOSE_KO);
-                        String detail_research_contents = c.getString(TAG_RESEARCH_CONTENTS_KO);
-                        String detail_research_expected = c.getString(TAG_RESEARCH_EXPECTED_KO);
+                        String detail_research_supporttxt = c.getString(TAG_SUPPORT_ORGANIZATION_KO);
                         String detail_date_start = c.getString(TAG_DATE_START);
                         String detail_date_end = c.getString(TAG_DATE_END);
-                        String detail_research_charge = c.getString(TAG_RESEARCH_CHARGE_KO);
-                        String detail_research_charge_belong = c.getString(TAG_RESEARCH_CHARGE_BELONG_KO);
-                        String detail_field_picture = c.getString(TAG_FIELD_PICTURE);
-                        String detail_progress = TAG_PROGRESS_KO;
-                        String detail_finish = TAG_FINISH_KO;
-                        long Time = GetTime(detail_date_end);
-                        research_nametxt.setText(detail_research_name);
-                        business_nametxt.setText(detail_business_name);
-                        departmenttxt.setText(detail_department_name);
-                        subjectivity_txt.setText(detail_subjectivity_organization);
-                        support_organizationtxt .setText(detail_support_organization);
-                        organizationstxt .setText(detail_participation_organization);
-                        research_chargetxt.setText(detail_research_charge);
-                        research_charge_belongtxt .setText(detail_research_charge_belong);
+
                         research_purposetxt.setText(detail_research_purpose);
-                        research_contentstxt.setText(detail_research_contents);
-                        research_expectedtxt.setText(detail_research_expected);
-                        datetxt.setText(detail_date_start+" ~ "+detail_date_end);
-                        if(Time>0)
-                        {
-                            researchprogresstxt.setText(detail_progress);
-                        }
-                        else
-                        {
-                            researchprogresstxt.setText(detail_finish);
-                        }
+                        research_supporttxt.setText(detail_research_supporttxt);
+                        research_datetxt.setText(detail_date_start+" ~ "+detail_date_end);
 
                     }
 
@@ -155,44 +109,14 @@ public class Research_detail extends AppCompatActivity {
                     Log.e("ssdsasdasdasdsadas",rid);
                     if(rid.equals(intent_rid)) {
 
-                        String detail_research_name = c.getString(TAG_RESEARCH_NAME_EN);
-                        String detail_business_name = c.getString(TAG_BUSINESS_NAME_EN);
-                        String detail_department_name = c.getString(TAG_DEPARTMENT_NAME_EN);
-                        String detail_subjectivity_organization = c.getString(TAG_SUBJECTIVITY_ORGANIZATION_EN);
-                        String detail_support_organization = c.getString(TAG_SUPPORT_ORGANIZATION_EN);
-                        String detail_participation_organization = c.getString(TAG_PARTICIPATION_ORGANIZATION_EN);
                         String detail_research_purpose = c.getString(TAG_RESEARCH_PURPOSE_EN);
-                        String detail_research_contents = c.getString(TAG_RESEARCH_CONTENTS_EN);
-                        String detail_research_expected = c.getString(TAG_RESEARCH_EXPECTED_EN);
+                        String detail_research_supporttxt = c.getString(TAG_SUPPORT_ORGANIZATION_EN);
                         String detail_date_start = c.getString(TAG_DATE_START);
                         String detail_date_end = c.getString(TAG_DATE_END);
-                        String detail_research_charge = c.getString(TAG_RESEARCH_CHARGE_EN);
-                        String detail_research_charge_belong = c.getString(TAG_RESEARCH_CHARGE_BELONG_EN);
-                        String detail_field_picture = c.getString(TAG_FIELD_PICTURE);
-                        String detail_progress = TAG_PROGRESS_EN;
-                        String detail_finish = TAG_FINISH_EN;
 
-                        long Time = GetTime(detail_date_end);
-                        research_nametxt.setText(detail_research_name);
-                        business_nametxt.setText(detail_business_name);
-                        departmenttxt.setText(detail_department_name);
-                        subjectivity_txt.setText(detail_subjectivity_organization);
-                        support_organizationtxt .setText(detail_support_organization);
-                        organizationstxt .setText(detail_participation_organization);
-                        research_chargetxt.setText(detail_research_charge);
-                        research_charge_belongtxt .setText(detail_research_charge_belong);
                         research_purposetxt.setText(detail_research_purpose);
-                        research_contentstxt.setText(detail_research_contents);
-                        research_expectedtxt.setText(detail_research_expected);
-                        datetxt.setText(detail_date_start+" ~ "+detail_date_end);
-                        if(Time>0)
-                        {
-                            researchprogresstxt.setText(detail_progress);
-                        }
-                        else
-                        {
-                            researchprogresstxt.setText(detail_finish);
-                        }
+                        research_supporttxt.setText(detail_research_supporttxt);
+                        research_datetxt.setText(detail_date_start+" ~ "+detail_date_end);
 
                     }
 

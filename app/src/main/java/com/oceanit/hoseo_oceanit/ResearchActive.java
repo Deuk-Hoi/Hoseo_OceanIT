@@ -56,9 +56,6 @@ public class ResearchActive extends AppCompatActivity implements NavigationView.
                 startActivity(research_performance);
                 break;
 
-            case R.id.research_activities_tools:
-                break;
-
             case R.id.academic_activities_tools:
                 break;
         }
