@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     TextView username;
     Button loginbtn,location,pcbtn,active,archive,logoutbtn, data_btn;
     ImageButton introduce_icon, member_icon, question_icon, research_icon;
-    //hello test
+    //hello test commit
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
