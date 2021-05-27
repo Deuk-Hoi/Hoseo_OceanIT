@@ -3,7 +3,7 @@
 ## 해양 IT 웹과 연동되는 앱을 이용자 접근성 확대.
 ### 제작에 사용된 기술
 
-> APP : Java, XML
+> APP : Java, XML<br>
 > Back-end : Node.js
 
 ## 제작 계획
